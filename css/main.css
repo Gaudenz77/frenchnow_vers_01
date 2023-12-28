@@ -191,3 +191,21 @@
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
 }
 
+.formTop {
+  border-radius:0;
+  width:60%;
+}
+
+.btn-ownblue {
+  /* background-color: #002654;  ORIGINAL */
+  background-color: #173963;
+  color:white;
+}
+
+.btn-ownred {
+  /* background-color: #ED2939; ORIGINAL */
+  background-color: #e05a66;
+  color:white;
+  
+}
+
