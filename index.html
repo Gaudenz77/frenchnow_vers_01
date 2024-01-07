@@ -29,7 +29,7 @@
     <header class="tf-header" data-parallax="scroll" data-image-src="images/learn-french-in-paris_1920x800.jpg">
       <nav class="navbar py-5 navbar-dark">
         <div class="container">
-          <h1><a class="navbar-brand" href="/">Wrenchnow Logo</a></h1>
+          <h1><a class="navbar-brand" href="/">Frenchnow Logo</a></h1>
           <div id="navbar">
             <ul class="nav pull-right">
               <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -73,10 +73,10 @@
             </form> -->
             <!-- form single line stop -->
 
-          <div class="btn-group col-md-4 mb-3">
-            <button type="button" class="btn btn-ownred"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume"></i></a></button>
-            <input type="email" class="formTop form-control text-center" placeholder="Call directly / Enter email" aria-label="Call directly / Enter email" aria-describedby="buttonSend">
-            <button type="button" class="btn btn-ownblue"><i class="fa-solid fa-envelope"></i></button>
+          <div class="btn-group col-md-5 mb-3">
+            <button type="button" class="btn btn-ownred"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume fa-2x"></i></a></button>
+            <input type="email" class="formTop form-control text-center col-4" placeholder="" aria-label="" aria-describedby="buttonSend"><!-- Call directly / Enter email -->
+            <button type="button" class="btn btn-ownblue" id="mailButton"><i class="fa-solid fa-envelope fa-2x"></i></button>
         </div>
         
 
@@ -168,7 +168,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 pt-2">
+              <div class="col-md-6 col-sm-12">
+                <!-- <div class="col-md-6 col-sm-12 pt-2"> -->
                 <div class="card align-items-center">
                   <!-- <div class="row justify-content-center">
                     <img class="img-fluid card-img-top text-center" src="images/Eiffelturm_collage_01.png" alt="4-start-simple" style="width:270px; height:auto"/>
@@ -177,7 +178,7 @@
                   <div class="row justify-content-center">
                     <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.png" alt="4-start-simple" style="width:350px; height:auto"/>
                   </div>
-                  <div class="card-body">
+                  <div class="card-body pt-4">
                     <p class="text-muted">Commodo convallis varius egestas purus rhoncus cras morbi dignissim, ligula vestibulum ultrices urna semper.</p>
                     <a class="card-link" href="#">Learn More</a>
                   </div>
@@ -256,10 +257,9 @@
               <p>contact@example.com</p>
             </div> -->
           </div>
-          <div class="row justify-content-center">
             <div class="col-md-3 text-center pt-3">
               <a href="#" style="display: inline-block;">
-                <i class="fa-solid fa-circle-chevron-up fa-3x" aria-hidden="true" name="" id="" href="#" role=""></i>
+                <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-4" aria-hidden="true" name="" id="" href="#" role=""></i>
               </a>
             </div>         
           </div>
@@ -270,11 +270,20 @@
     <footer class="bg-dark py-4 mt-5 tf-footer">
       <div class="container text-light">
         <div class="row">
-          <div class="col-md-6 col-sm-12">&copy; Your Company Name. All rights reserved.</div>
-          <div class="col-md-6 col-sm-12 text-right tf-design">Design - <a href="https://templateflip.com" target="_blank">Krakatoom</a></div>
+          <div class="col-md-6 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
+          <div class="col-md-6 col-sm-12 text-right tf-design"><!-- Design - --> <a href="https://templateflip.com" target="_blank"><!-- Krakatoom-Design --></a></div>
         </div>
       </div>
     </footer>
+
+
+    <!-- Your custom JavaScript -->
+<script>
+  document.getElementById('mailButton').addEventListener('click', function() {
+    // Change 'your.email@example.com' to the email address you want to open in the mail client
+    window.location.href = 'mailto:your.email@example.com';
+  });
+</script>
     <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/parallax.min.js?ver=1.2.0"></script>
