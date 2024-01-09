@@ -260,7 +260,7 @@ a#menu-icon.close .bar:last-child {
 
 .booking {
   position: relative;
-  animation: rollBanner 0s linear infinite;
+  animation: rollBanner 25s linear infinite;
 }
 
 @keyframes rollBanner {
