@@ -14,6 +14,7 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
     </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
     <noscript>
@@ -27,12 +28,21 @@
 
   <body id="top"> 
     <header class="tf-header" data-parallax="scroll" data-image-src="images/learn-french-in-paris_1920x800.jpg">
-      <nav class="navbar py-2 py-md-5 navbar-dark">
-        <div class="container">
-          <!-- Your centered logo/title -->
+
+<!-- ------------------------------------------------------------------------ -->
+      <nav class="navbar navbar-expand-md py-2 py-md-5 navbar-dark">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="d-md-none">
+            <a href="#" id="menu-icon" class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </a>
+          </div>
+
           <h1 class="text-center"><a class="navbar-brand" href="/">Frenchnow Logo</a></h1>
-          <!-- Your responsive navigation bar -->
-          <div id="navbar" class="navbar navbar-expand-md navbar-light">
+
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav">
               <li class="nav-item"><a class="nav-link text-center" href="#">Home</a></li>
               <li class="nav-item"><a class="nav-link text-center" href="#work">Courses</a></li>
@@ -42,50 +52,47 @@
           </div>
         </div>
       </nav>
+
+<!-- BANNER BTN START ------------------------------------------------------------------------ -->
+
+      <div class="container-fluid">
+        <div class="row">                               
+          <div class="container-fluid bannercontainer custom-container">
+            <div class="row justify-content-center">
+              <div class="col-12 booking mb-3">
+                <button type="button" class="btn btn-primary">Book a free Lesson now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!-- BENNR BTN STOP    ------------------------------------------------------------------------ -->
+
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <h2>FRENCHNOW <br> Hero Text<br> Comes here...</h2>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <p class="mt-4">Landingpage, optimised for Mobile and Desktop, fully responsive.</p>
             <p class="mt-5"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch</span></p>
           </div>
         </div>
+ 
         <div class="row no-gutters">
-          <!-- <div class="col-md-4 col-sm-12 tf-hh-col">
-            <input class="mt-1 form-control" type="email" placeholder="*Your Email Address">
-          </div> -->
-          <!-- <div class="col-md-3 col-sm-12"><a class="tf-header-heading-btn a btn btn-primary btn-block mt-1" href="#">Request Free Trial</a></div> -->
-
-          <!-- <div class="btn-group mt-1" role="group" aria-label="Basic mixed styles example">
-            <button type="button" class="btn btn-danger"><i class="fa-solid fa-phone-volume"></i></button>
-            <button type="button" class="btn btn-light"><i class="fa-solid fa-envelope"></i></button>
-            <button type="button" class="btn btn-info">Right</button>
-          </div> -->
-
-                    <!-- form single line start -->
-            <!-- <form action="process.php" method="POST">
-              <input class="mt-1 form-control" type="email" id="email" name="email" placeholder="*Ihre Email Adresse" required>
-              </div>
-              <div class="col-md-3 col-sm-12">
-              <button class="tf-header-heading-btn a btn btn-primary btn-block mt-1" type="submit">Gratis Probelektion</button>
-            </form> -->
-            <!-- form single line stop -->
-
           <div class="btn-group col-md-5 mb-3">
-            <button type="button" class="btn btn-ownred"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume fa-2x"></i></a></button>
+            <button type="button" class="btn btn-ownblue"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume fa-2x"></i></a></button>
             <input type="email" class="formTop form-control text-center col-4" placeholder="" aria-label="" aria-describedby="buttonSend"><!-- Call directly / Enter email -->
-            <button type="button" class="btn btn-ownblue" id="mailButton"><i class="fa-solid fa-envelope fa-2x"></i></button>
-        </div>
-        
-
-
+            <button type="button" class="btn btn-ownred" id="mailButton"><i class="fa-solid fa-envelope fa-2x"></i></button>
+          </div>
         </div>
       </div>
     </header>
+
     <div class="page-content">
       <div>
       <div class="tf-work-section">
@@ -279,9 +286,13 @@
       </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <!-- Your custom JavaScript -->
 <script>
+
+
+
   document.getElementById('mailButton').addEventListener('click', function() {
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:your.email@example.com';

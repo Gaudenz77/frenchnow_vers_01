@@ -213,3 +213,68 @@
   color:#ff574e;
 }
 
+/* HAMBURGER MENU CSS START ----------------------------------------------------*/
+
+:root {
+  --menu-icon-scale: 1; /* Adjust this value to scale the icon */
+}
+
+a#menu-icon {
+  display: inline-block;
+  padding: 10px;
+  transform: scale(var(--menu-icon-scale));
+}
+
+a#menu-icon .bar {
+  margin: 3px;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 1.5px;
+  transition: margin 0.35s, transform 0.2s;
+}
+
+a#menu-icon:not(.close):hover {
+  padding: 6px 10px;
+}
+
+a#menu-icon:not(.close):hover .bar {
+  margin: 5px 3px;
+}
+
+a#menu-icon.close .bar:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+
+a#menu-icon.close .bar:nth-child(2) {
+  opacity: 0;
+}
+
+a#menu-icon.close .bar:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.bannercontainer {
+  overflow: hidden;
+}
+
+.booking {
+  position: relative;
+  animation: rollBanner 15s linear infinite;
+}
+
+@keyframes rollBanner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.custom-container {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
