@@ -287,8 +287,24 @@ a#menu-icon.close .bar:last-child {
   cursor: pointer;
 }
 
-#language-switch img {
-  width: 50px;
-  height: 30px;
-  margin-right: 10px;
+
+
+#flagDeFr {
+  width:1rem;
+  height:auto;
+}
+
+#flagFr {
+  width:2rem;
+  height:auto;
+}
+
+#flagFrDe {
+  width:1rem;
+  height:auto;
+}
+
+#flagDe {
+  width:2rem;
+  height:auto;
 }

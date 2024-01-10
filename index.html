@@ -56,8 +56,9 @@
 
                     <!-- On index.html (German version) -->
           <div id="language-switch" onclick="toggleLanguage()">
-            <img id="flag" class="img-fluid col-4" src="./images/germany.png" alt="Germany Flag">
-            <span>Switch Language</span>
+            <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">
+            <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">
+            <!-- <span class="small">Deutsch / Französisch</span> -->
           </div>
           
         </div>
@@ -304,7 +305,7 @@
 <script>
   /* LANGUAGE TOGGLE */
   function toggleLanguage() {
-    var flag = document.getElementById('flag');
+    var flag = document.getElementById('flagDe');
     var currentLanguage = flag.src.includes('germany.png') ? 'germany' : 'france';
     var newLanguage = currentLanguage === 'germany' ? 'france' : 'germany';
 
