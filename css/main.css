@@ -278,3 +278,17 @@ a#menu-icon.close .bar:last-child {
   padding-right: 0;
   padding-left: 0;
 }
+
+/* language toggle*/
+
+#language-switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#language-switch img {
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}

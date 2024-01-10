@@ -41,11 +41,11 @@
             </a>
           </div>
 
-          <h1 class="text-center"><a class="navbar-brand" href="/">Frenchnow Logo - deutsch</a></h1>
+          <h1 class="text-center"><a class="navbar-brand" href="/">Frenchnow Logo - français</a></h1>
 
-          <!-- On index.html (German version) -->
+          <!-- On index_french.html (French version) -->
           <div id="language-switch" onclick="toggleLanguage()">
-            <img id="flag" src="./images/germany.png" alt="Germany Flag">
+            <img id="flag" src="./images/france.png" alt="France Flag">
             <span>Switch Language</span>
           </div>
 
@@ -89,13 +89,13 @@
             <p class="mt-4">Landingpage, optimised for Mobile and Desktop, fully responsive.</p>
             <p class="mt-5"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch</span></p>
           </div>
-        </div>germany.
+        </div>
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 mb-3">
             <button type="button" class="btn btn-ownblue"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume fa-2x"></i></a></button>
             <input type="email" class="formTop form-control text-center col-4" placeholder="" aria-label="" aria-describedby="buttonSend"><!-- Call directly / Enter email -->
-            <button type="button" class="btn btn-ownred" id="mailbutton2"><i class="fa-solid fa-envelope fa-2x"></i></button>
+            <button type="button" class="btn btn-ownred" id="mailButton"><i class="fa-solid fa-envelope fa-2x"></i></button>
           </div>
         </div>
       </div>
@@ -314,10 +314,8 @@
 
     window.location.href = newWebsite;
   }
-  
-    /* MsAILTO FUNCTION START */
 
-  document.getElementById('mailbutton2').addEventListener('click', function() {
+  document.getElementById('mailButton').addEventListener('click', function() {
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:your.email@example.com';
   });
