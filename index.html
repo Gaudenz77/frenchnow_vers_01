@@ -16,6 +16,7 @@
     </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
     <noscript>
       <style>
@@ -28,6 +29,42 @@
 
   <body id="top"> 
     <header class="tf-header" data-parallax="scroll" data-image-src="images/learn-french-in-paris_1920x800.jpg">
+
+<!-- BANNER BTN START ------------------------------------------------------------------------ -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container-fluid bannercontainer custom-container">
+            <div class="row justify-content-between bg-danger">
+              <div class="col-2 d-flex justify-content-start">
+                <div class="">        
+                    <!-- <span clas="" aria-hidden="true">&times;</span> -->
+                    <!-- <i class="fa-solid fa-xmark fa-2x m-3" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i> -->
+                </div>
+              </div>
+              <!-- EXTRA FLAG  change cols accordingly  -->
+              <!-- <div class="col-1 booking">
+                <img id="" class="" src="./images/france_rect_rounded.png" alt="France Flagrounded" style="height:60px; width:auto;">
+              </div> -->
+
+              <div class="col-8 booking">         
+                <h3 class="text-center mt-1 pt-2">
+                  <!-- <img id="" class="img-fluid col-1 pb-1" src="./images/france_rect_rounded.png" alt="France Flag"> -->
+                  Book a free Lesson now
+                </h3>
+              </div>
+              <div class="col-2 d-flex justify-content-end">
+                <div class="close-container">        
+                    <!-- <span clas="" aria-hidden="true">&times;</span> -->
+                    <i class="fa-solid fa-xmark fa-2x m-3" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+<!-- BANNER BTN STOP    ------------------------------------------------------------------------ -->
 
 <!-- ------------------------------------------------------------------------ -->
       <nav class="navbar navbar-expand-md pt-md-2 pb-0 navbar-dark">
@@ -63,22 +100,6 @@
         </div>
       </nav>
 
-<!-- BANNER BTN START ------------------------------------------------------------------------ -->
-
-      <div class="container-fluid">
-        <div class="row">                               
-          <div class="container-fluid bannercontainer custom-container">
-            <div class="row justify-content-center">
-              <div class="col-12 booking mb-3">
-                <button type="button" class="btn btn-primary">Book a free Lesson now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-<!-- BANNER BTN STOP    ------------------------------------------------------------------------ -->
-
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-sm-12">
@@ -89,9 +110,9 @@
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <p class="mt-4">Landingpage, optimised for Mobile and Desktop, fully responsive.</p>
-            <p class="mt-5"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch</span></p>
+            <p class="mt-5"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch.</span></p>
           </div>
-        </div>germany.
+        </div>
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 mb-3">
@@ -299,8 +320,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <!-- Your custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   <!-- Your custom JavaScript -->
 <script>
   /* LANGUAGE TOGGLE */
   function toggleLanguage() {
@@ -317,12 +337,13 @@
     window.location.href = newWebsite;
   }
   
-    /* MsAILTO FUNCTION START */
+    /* MAILTO FUNCTION START */
 
   document.getElementById('mailbutton2').addEventListener('click', function() {
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:your.email@example.com';
   });
+
 </script>
     <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
