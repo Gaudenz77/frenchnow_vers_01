@@ -287,6 +287,10 @@ a#menu-icon.close .bar:last-child {
   opacity: var(--bs-btn-close-opacity);
 } */
 
+.bannerText:hover {
+color:#ff574e;
+}
+
 /* BANNER SPEED (0 = STOP) */
 
 .booking {
