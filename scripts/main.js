@@ -1,12 +1,10 @@
-// Add your javascript here
-
 // HAMBURGER MENU SCRIPT ----------------------------------------------------------------
-const menuButton = document.querySelector("a#menu-icon");
+  const menuButton = document.querySelector("a#menu-icon");
 
-menuButton.addEventListener("click", function(e) {
-  e.preventDefault();
-  menuButton.classList.toggle("close");
-});
+  menuButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    menuButton.classList.toggle("close");
+  });
 
 // Banner CLOSE ONCLICK
 
@@ -15,10 +13,10 @@ menuButton.addEventListener("click", function(e) {
     document.querySelector('.bannercontainer').style.transition = 'height 0.5s ease';
     document.querySelector('.bannercontainer').style.height = '0';
 
-    // Scroll to the contact section after the banner is closed
-    setTimeout(function () {
+    // Scroll to the contact section after the banner is closed (tease to contact if wanted with timeout?)
+    /* setTimeout(function () {
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    }, 500);
+    }, 500); */
   }
 
   // Scroll to the contact section when "BOOK FREE LESSON NOW" is clicked

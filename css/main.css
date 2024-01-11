@@ -322,7 +322,15 @@ color:#ff574e;
   cursor: pointer;
 }
 
+#flagFrDe {
+  width:1rem;
+  height:auto;
+}
 
+#flagDe {
+  width:2rem;
+  height:auto;
+}
 
 #flagDeFr {
   width:1rem;
@@ -330,16 +338,6 @@ color:#ff574e;
 }
 
 #flagFr {
-  width:2rem;
-  height:auto;
-}
-
-#flagFrDe {
-  width:1rem;
-  height:auto;
-}
-
-#flagDe {
   width:2rem;
   height:auto;
 }
