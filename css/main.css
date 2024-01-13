@@ -285,6 +285,10 @@ a#menu-icon.close .bar:last-child {
     font-weight: 700;
   }
 
+  .bannerText:hover {
+    color:#ff574e;
+  }
+
   .tf-header .nav{
     font-size:12px;
   }
@@ -298,9 +302,21 @@ a#menu-icon.close .bar:last-child {
   }
 }
 
-@media (max-width: 810px) and (orientation: landscape) {
+/* @media (max-width: 750px) and (min-width: 810px) and (orientation: landscape) {
 
-}
+  .bannercontainer {
+    overflow: hidden;
+  height: 13vh;
+  cursor: pointer;
+  font-family: 'Oxygen', sans-serif;
+  }
+
+  .bannerText {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+} */
 
 /* Large devices (up to 1199.98px) */
 @media (min-width: 810px) and (orientation: landscape) {
