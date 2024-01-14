@@ -124,6 +124,11 @@
     font-size: 20px; } }
 
 /* Contact Section */
+.tf-contact-section {
+  background: url('../images/learn_french_in_paris_symbolic_01.png') no-repeat center center;
+  height:120%;
+}
+
 .tf-contact-section h2.h4 {
   text-align: center;
   text-transform: uppercase;
