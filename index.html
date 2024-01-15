@@ -39,7 +39,7 @@
  -->
       <div class="container-fluid">
         <div class="row">
-          <div class="container-fluid bannercontainer custom-container">
+          <div class="container-fluid bannercontainer customOne-container">
             <div class="row justify-content-between">
               <div class="col-2 d-flex justify-content-start">
                 <div class="">        
@@ -53,14 +53,14 @@
               </div> -->
 
               <div class="col-8 booking">         
-                <div class="bannerText text-center pt-3 pb-3 pt-md-2 pb-lg-2">
+                <div class="bannerText text-center my-1 mt-md-0 pt-3 pb-3 pt-md-2 pb-lg-2">
                   <!-- <img id="" class="img-fluid col-1 pb-1" src="./images/france_rect_rounded.png" alt="France Flag"> -->
                   Jetzt Gratislektion buchen!
                 </div>
               </div>
               <div class="col-2 d-flex justify-content-end">
                 <div class="close-container">        
-                    <i class="fa-solid fa-xmark fa-2x bannerX m-3 pt-2 pt-md-0" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
+                    <i class="fa-solid fa-xmark fa-2x bannerX m-3 pt-0 pt-md-1" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
                 </div>
               </div>
             </div>
@@ -82,22 +82,21 @@
 
           <!-- <h1 class="text-center"><a class="navbar-brand" href="/"><img id="logoFontFrenchnow" class="img-fluid col-3" src="./images//frenchnow_logo_font.png" alt="France Flag"> --><!-- Frenchnow Logo  --><!-- <br>- français --><!-- </a></h1> -->
           <div class="col-4 col-md-2 px-0 pt-1">
-            <a class="navbar-brand mx-2 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid" src="./images/frenchnow_logo_font_01.svg" alt="France Flag"><!-- Frenchnow Logo  --><!-- <br>- français --></a>
+            <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid" src="./images/frenchnow_logo_font_01.svg" alt="France Flag"><!-- Frenchnow Logo  --><!-- <br>- français --></a>
           </div>
-
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="nav navbar-nav navbarOwn">
-              <li class="nav-item"><a class="nav-link text-center" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link text-center" href="#work">Courses</a></li>
-              <li class="nav-item"><a class="nav-link text-center" href="#work2">About Me</a></li>
-              <li class="nav-item"><a class="nav-link text-center" href="#contact">Contact</a></li>
+            <ul class="nav navbar-nav row justify-content-end px-3">
+              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#">Home</a></li>
+              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#work">Courses</a></li>
+              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#work2">About Me</a></li>
+              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <!-- On index.html (German version) -->
           <div id="language-switch" onclick="toggleLanguage()">
-            <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">
-            <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">
+            <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">DE&nbsp;&nbsp;
+            <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">&nbsp;&nbsp;fr
             <!-- <span class="small">Deutsch / Französisch</span> -->
           </div>
           
@@ -120,7 +119,7 @@
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 mb-3">
-            <button type="button" class="btn btn-ownblue"><a href="tel:+410789130534" class="text-light"><i class="fa-solid fa-phone-volume fa-2x" style="font-size: 1.5rem;"></i></a></button>
+            <button type="button" class="btn btn-ownblue"><a href="tel:+410789130534" class="text-light"></a><i class="fa-solid fa-phone-volume fa-2x" style="font-size: 1.5rem;"></i></button>
             <input type="email" class="formTop form-control text-center col-4" placeholder="" aria-label="" aria-describedby="buttonSend"><!-- Call directly / Enter email -->
             <button type="button" class="btn btn-ownred" id="mailbutton2"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
           </div>
@@ -360,14 +359,14 @@
           </div>
         </div>
 
-      <div class="tf-contact-section tf-header">
+      <div class="tf-contact-section tf-header imgLastSection">
         <div class="container" id="contact">
-          <h2 class="h4">Your language journey begins here - Contact Us</h2>
+          <h2 class="h4 text-lastSection">Your language journey begins here - Contact Us</h2>
         </div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12 card p-3 pb-2 mx-2 mx-md-0" style="background: rgba(0, 0, 0, 0.1); border:none;">
-              <h3 class="h5">Contact us</h3>
+              <h3 class="h5 text-lastSection">Contact us</h3>
               <!-- <form action="https://formspree.io/youremail@example.com" method="POST"> -->
               <form action="processform.php" method="POST">
                 <div class="row no-gutters">
@@ -400,7 +399,7 @@
               <p>contact@example.com</p>
             </div> -->
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center d-md-none">
             <div class="col-md-3 text-center pt-3">
               <a href="#" style="display: inline-block;">
                 <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-4" aria-hidden="true" name="" id="" href="#" role=""></i>
@@ -411,11 +410,18 @@
       </div>
     </div>
     
-    <footer class="bg-dark py-4 mt-5 tf-footer">
+    <footer class="footerOwn bg-dark tf-footer">
       <div class="container text-light">
         <div class="row">
-          <div class="col-md-6 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
-          <div class="col-md-6 col-sm-12 text-right tf-design"><!-- Design - --> <a href="https://templateflip.com" target="_blank"><!-- Krakatoom-Design --></a>
+          <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
+
+            <div class="col-md-2 text-center pb-2 d-none d-lg-block">
+              <a href="#" style="display: inline-block;">
+                <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
+              </a>
+            </div>         
+
+          <div class="col-md-5 col-sm-12 text-right tf-design"><!-- Design - --> <a href="https://templateflip.com" target="_blank"><!-- Krakatoom-Design --></a>
           <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
         </div>
         </div>

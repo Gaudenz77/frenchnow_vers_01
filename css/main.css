@@ -82,6 +82,17 @@
     padding-bottom: 0.5rem; } }
 
 /* Quotes Section */
+
+/* .carousel-item {
+  width: 99%;
+  overflow-x: hidden;
+} */
+
+/* .carousel-item{
+  float:none; 
+  transition: 0s !important;
+} */
+
 .tf-quotes-section .carousel-item {
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,19 +181,79 @@
     text-align: left !important; } }
 
 
-/*  OWN CSS =====================================================================================================*/
+/*  OWN CSS ===================================================================================================== */
 
 body {
-  /* font-family: 'Oxygen', sans-serif; */
+  font-family: 'Oxygen', sans-serif;
+  
 }
 
-:root {
-  --menu-icon-scale: 1; /* Adjust this value to scale the icon */
+
+/* MEDIAQUERIES
+
+/* Small devices (576px and up) */
+@media (max-width: 480px) {
+  /* Add your styles for small devices here */
+  .bannercontainer {
+    overflow: hidden;
+    cursor:pointer;
+  }
+
+  .bannerText {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .tf-header .nav{
+    font-size:12px;
+  }
+  
+  .tf-header {
+    height:700px;
+  }
+
+  .tf-header::before  {
+    height:700px;
+  }
 }
 
-.image-container {
+/* @media (max-width: 750px) and (min-width: 810px) and (orientation: landscape) {
+
+
+
+} */
+
+/* Large devices (up to 1199.98px) */
+@media (min-width: 810px) and (orientation: landscape) {
+  /* Add your styles for large devices here */
+  .bannercontainer {
+    overflow: hidden;
+    cursor:pointer;
+    
+  }
+
+  .bannerText {
+    font-size:2rem;
+    font-weight: 700;
+  }
+
+.tf-header .nav{
+    font-size:;
+  }
+
+  .tf-header {
+    height:650px;
+  }
+
+  .tf-header::before  {
+    height:650px;
+  }
+}
+
+/* Set the width of the container */
+/* .image-container {
   position: relative;
-  width: 300px; /* Set the width of the container */
+  width: 300px; 
   height: auto;
 }
 
@@ -197,26 +268,33 @@ body {
 .image-overlay img {
   width: 100%;
   height: auto;
-}
+} */
 
-.overlay {
+/* Adjust the opacity as needed */
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-}
+  background-color: rgba(0, 0, 0, 0.5); 
+} */
 
 .formTop {
   border-radius:0;
   width:60%;
 }
 
+/* Buttons ---------------------------------------------------- */
+
 .btn-ownblue {
   /* background-color: #002654;  ORIGINAL */
   background-color: #173963;
   color:white;
+}
+
+.btn-ownblue:hover {
+  color:#000000;
 }
 
 .btn-ownred {
@@ -230,7 +308,11 @@ body {
   color:#ff574e;
 }
 
-/* HAMBURGER MENU CSS START ----------------------------------------------------*/
+/* HAMBURGER MENU CSS START ---------------------------------------------------- */
+
+:root {
+  --menu-icon-scale: 1; /* Adjust this value to scale the icon */
+}
 
 a#menu-icon {
   display: inline-block;
@@ -267,7 +349,7 @@ a#menu-icon.close .bar:last-child {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* BANNER CSS */
+/* BANNER CSS ---------------------------------------------------- */
 
 .bannercontainer {
   overflow: hidden;
@@ -285,69 +367,13 @@ a#menu-icon.close .bar:last-child {
   color:#ebb916;
 }
 
-/* Small devices (576px and up) */
-@media (max-width: 480px) {
-  /* Add your styles for small devices here */
-  .bannercontainer {
-    overflow: hidden;
-    cursor:pointer;
-  }
-
-  .bannerText {
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  .tf-header .nav{
-    font-size:12px;
-  }
-  
-  .tf-header {
-    height:700px;
-  }
-
-  .tf-header::before  {
-    height:700px;
-  }
-}
-
-/* @media (max-width: 750px) and (min-width: 810px) and (orientation: landscape) {
-
-/* Large devices (up to 1199.98px) */
-@media (min-width: 810px) and (orientation: landscape) {
-  /* Add your styles for large devices here */
-  .bannercontainer {
-    overflow: hidden;
-    cursor:pointer;
-    
-  }
-
-  .bannerText {
-    font-size:2rem;
-    font-weight: 700;
-  }
-
-.tf-header .nav{
-    font-size:;
-  }
-
-  .tf-header {
-    height:650px;
-  }
-
-  .tf-header::before  {
-    height:650px;
-  }
-}
-
-
 .close-container {
   background-color: rgba(0, 0, 0, 0.1); /* Use your desired color */
   /* padding-right: 13px !important; */
   height:100% !important;
 }
 
-/* BANNER SPEED (0 = STOP) */
+/* BANNER SPEED (0 = STOP) ----------------------------------------------------  */
 
 .booking {
   position: relative;
@@ -363,14 +389,14 @@ a#menu-icon.close .bar:last-child {
   }
 }
 
-.custom-container {
+.customOne-container {
   margin-right: 0;
   margin-left: 0;
   padding-right: 0;
   padding-left: 0;
 }
 
-/* language toggle*/
+/* language toggle ----------------------------------------------------  */
 
 #language-switch {
   display: flex;
@@ -378,13 +404,18 @@ a#menu-icon.close .bar:last-child {
   cursor: pointer;
 }
 
+#flagDe {
+  width:1.6rem;
+  height:auto;
+}
+
 #flagFrDe {
   width:1rem;
   height:auto;
 }
 
-#flagDe {
-  width:2rem;
+#flagFr {
+  width:1.6rem;
   height:auto;
 }
 
@@ -393,10 +424,18 @@ a#menu-icon.close .bar:last-child {
   height:auto;
 }
 
-#flagFr {
-  width:2rem;
-  height:auto;
+
+.text-lastSection {
+  color:white !important;
+  position:relative;
+  z-index:3;
 }
 
-/* Banner */
+.imgLastSection {
+  /* height:650px; */
+}
 
+.footerOwn {
+  height:4rem;
+}
+/* OWN CSS END ===================================================================================================== */
