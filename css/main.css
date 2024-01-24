@@ -4,13 +4,12 @@
 .tf-header {
   position: relative;
   background-size: cover;
-  margin-top: 4rem;
-  /* height: 650px; */
   height: 700px;
   color: rgba(255, 255, 255, 0.98); }
   .tf-header::before {
     background: rgba(0, 0, 0, 0.65);
     position: absolute;
+    top:0;
     width: 100%;
     /* height: 650px; */
     height: 700px;
@@ -186,8 +185,7 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
-  
-  
+
 }
 
 /* .roboto-thin {
