@@ -97,6 +97,11 @@
   z-index: 3;
 }
 
+.carousel-indicators {
+  z-index: 4;
+}
+
+
 .tf-quotes-section .carousel-item {
   background-size: cover;
   background-repeat: no-repeat;
@@ -434,7 +439,7 @@ a#menu-icon.close .bar:last-child {
   font-family: 'Oxygen', sans-serif;
   background-color: #6885A1 !important;
   position: fixed; 
-  z-index: 4; 
+  z-index: 5; 
   top: 0;
 }
 
