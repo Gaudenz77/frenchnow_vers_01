@@ -93,6 +93,10 @@
   transition: 0s !important;
 } */
 
+.carousel-inner {
+  z-index: 3;
+}
+
 .tf-quotes-section .carousel-item {
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +434,7 @@ a#menu-icon.close .bar:last-child {
   font-family: 'Oxygen', sans-serif;
   background-color: #6885A1 !important;
   position: fixed; 
-  z-index: 3; 
+  z-index: 4; 
   top: 0;
 }
 
@@ -503,7 +507,7 @@ a#menu-icon.close .bar:last-child {
 .text-lastSection {
   color:white !important;
   position:relative;
-  z-index:3;
+  z-index:0;
 }
 
 /* .imgLastSection {
