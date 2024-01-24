@@ -63,10 +63,10 @@
 <!-- BANNER BTN STOP    ------------------------------------------------------------------------ -->
 <!-- NAVBAR START ------------------------------------------------------------------------ -->
       <nav class="navbar navbar-expand-md pt-md-2 pb-0 navbar-dark">
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-start">
 
           <div class="d-md-none">
-            <a href="#" id="menu-icon" class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#" id="menu-icon" class="p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <div class="bar"></div>
               <div class="bar"></div>
               <div class="bar"></div>
@@ -74,25 +74,28 @@
           </div>
 
           <!-- <h1 class="text-center"><a class="navbar-brand" href="/"><img id="logoFontFrenchnow" class="img-fluid col-3" src="./images//frenchnow_logo_font.png" alt="France Flag"> --><!-- Frenchnow Logo  --><!-- <br>- français --><!-- </a></h1> -->
-          <div class="col-4 col-md-2 px-0 pt-1">
-            <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid" src="./images/frenchnow_logo_font_01.svg" alt="France Flag"><!-- <h1 class="display-5">Frenchnow<i class="fa-regular fa-copyright"></i></h1> --><!-- <br>- français --></a>
+          <div class="col-4 col-md-2">
+            <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid" src="./images/frenchnow_logo_font_01.svg" alt="Frenchnow_logo"><!-- <h1 class="display-5">Frenchnow<i class="fa-regular fa-copyright"></i></h1> --><!-- <br>- français --></a>
           </div>
+
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="nav navbar-nav row justify-content-end px-3">
-              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#">Home</a></li>
-              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#work">Courses</a></li>
-              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#work2">About Me</a></li>
-              <li class="nav-item row justify-content-end px-3"><a class="nav-link text-center" href="#contact">Contact</a></li>
+            <ul class="nav navbar-nav mx-3">
+              <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4" href="#">Home</a></li>
+              <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4" href="#work">Courses</a></li>
+              <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4" href="#work2">About Me</a></li>
+              <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4" href="#contact">Contact</a></li>
             </ul>
           </div>
 
           <!-- On index.html (German version) -->
-          <div id="language-switch" onclick="toggleLanguage()">
-            <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">DE&nbsp;&nbsp;
-            <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">&nbsp;&nbsp;fr
-            <!-- <span class="small">Deutsch / Französisch</span> -->
-          </div>
-          
+ 
+            <div class="" id="language-switch" onclick="toggleLanguage()">
+              <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">DE&nbsp;&nbsp;
+              <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">&nbsp;&nbsp;fr
+              <!-- <span class="small">Deutsch / Französisch</span> -->
+            </div>
+    
+
         </div>
       </nav>
 <!-- NAVBAR STOP ------------------------------------------------------------------------ -->
@@ -351,7 +354,7 @@
 
       <div class="tf-contact-section tf-header imgLastSection">
         <div class="container" id="contact">
-          <h2 class="h4 text-lastSection">Your language journey begins here - Contact Us</h2>
+          <h2 class="h4 text-lastSection">Your language journey begins here!</h2>
         </div>
         <div class="container">
           <div class="row justify-content-center">
@@ -373,7 +376,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col text-center text-md-left text-lg-left mt-3 mb-3">
+                  <div class="col text-center text-md-left text-lg-left mt-3">
                     <button class="btn btn-primary" type="submit">Senden</button>
                   </div>
                 </div>
@@ -396,14 +399,29 @@
             </div>         
           </div>
         </div>
+        <div class="container text-light">
+          <div class="row">
+            <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
+  
+              <div class="col-md-2 text-center pb-2 d-none d-lg-block">
+                <a href="#" style="display: inline-block;">
+                  <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
+                </a>
+              </div>         
+  
+            <div class="col-md-5 col-sm-6 text-right "><!-- Design - --> <a href="https://templateflip.com" target="_blank"><!-- Krakatoom-Design --></a>
+            <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary d-none" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
+          </div>
+          </div>
+        </div>
       </div>
       
     </div>
     
-    <footer class="footerOwn bg-dark tf-footer">
+    <!-- <footer class="footerOwn bg-dark tf-footer">
       <div class="container text-light">
         <div class="row">
-          <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
+          <div class="col-md-5 col-sm-12"> &copy;Your Company Name. All rights reserved.</div>
 
             <div class="col-md-2 text-center pb-2 d-none d-lg-block">
               <a href="#" style="display: inline-block;">
@@ -411,12 +429,12 @@
               </a>
             </div>         
 
-          <div class="col-md-5 col-sm-12 text-right tf-design"><!-- Design - --> <a href="https://templateflip.com" target="_blank"><!-- Krakatoom-Design --></a>
+          <div class="col-md-5 col-sm-12 text-right tf-design">Design -<a href="https://templateflip.com" target="_blank">Krakatoom-Design</a>
           <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
         </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   <!-- Your custom JavaScript -->
