@@ -486,7 +486,7 @@ a#menu-icon.close .bar:last-child {
 
 .booking {
   position: relative;
-  animation: rollBanner /* 25s */ 20s linear infinite;
+  animation: rollBanner /* 25s */ 0s linear infinite;
 }
 
 @keyframes rollBanner {
