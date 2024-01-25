@@ -371,22 +371,47 @@ body {
 
 .btn-ownblue {
   /* background-color: #002654;  ORIGINAL */
-  background-color: #173963;
+  background-color: #002654;
   color:white;
 }
 
 .btn-ownblue:hover {
-  color:#000000;
+  background-color: #0414a1;
+  border-color: #044ba1;
+  color:#044ba1;
 }
 
 .btn-ownred {
   /* background-color: #ED2939; ORIGINAL */
-  background-color: #e05a66;
-  color:white;
+  background-color: #ce1126;
+  color:white; 
+}
+
+.btn-ownred:hover {
+  background-color: #e61308;
+  border-color: #ff574e;
+  color:#ff574e;
+}
+
+.btn-send {
+  color: #fff;
+  background-color: #ce1126;
+  border-color: #a7081a;
+  
+}
+
+.btn-send:hover {
+  color: #fff;
+  background-color: #ff574e;
+  border-color: #ff574e;
   
 }
 
 .own-btnup {
+  color:#ce1126;
+}
+
+.own-btnup:hover {
   color:#ff574e;
 }
 
@@ -437,7 +462,7 @@ a#menu-icon.close .bar:last-child {
   overflow: hidden;
   cursor:pointer;
   font-family: 'Oxygen', sans-serif;
-  background-color: #6885A1 !important;
+  background-color: #043461 !important;
   position: fixed; 
   z-index: 5; 
   top: 0;
@@ -515,9 +540,12 @@ a#menu-icon.close .bar:last-child {
   z-index:0;
 }
 
-/* .imgLastSection {
+.imgLastSection {
   height:650px;
-} */
+  position: relative;
+  background-size: cover;
+
+}
 
 .footerOwn {
   height:4rem;

@@ -20,8 +20,7 @@
     <noscript>
       <style>
         .tf-header {
-          background: url('images/learn-french-in-paris_1920x800.jpg') no-repeat center center;
-          
+          background: url('images/learn-french-in-paris_1920x800.jpg') no-repeat center center;         
         }
       </style>
     </noscript>
@@ -54,7 +53,7 @@
               </div>
               <div class="col-2 d-flex justify-content-end">
                 <div class="close-container">        
-                    <i class="fa-solid fa-xmark fa-2x bannerX m-3 pt-0 pt-md-1" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
+                    <i class="fa-solid fa-xmark fa-2x bannerX m-3 pt-2 pt-md-1" type="button" class="" data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
                 </div>
               </div>
             </div>
@@ -63,8 +62,9 @@
       </div>
 <!-- BANNER BTN STOP    ------------------------------------------------------------------------ -->
 <!-- NAVBAR START ------------------------------------------------------------------------ -->
-<nav class="navbar navbar-expand-md pt-4 pt-md-4 pb-0">
+<nav class="navbar navbar-expand-md pt-5 pt-md-5 pb-0">
   <div class="container d-flex align-items-center justify-content-between">
+
       <div class="d-md-none">
           <a href="#" id="menu-icon" class="p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <div class="bar"></div>
@@ -74,7 +74,7 @@
       </div>
 
       <div class="col-4 col-md-2 px-0 order-md-1"> <!-- Add order-md-1 to move it to the left on medium and large devices -->
-          <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid" src="./images/frenchnow_logo_font_01.svg" alt="Frenchnow_logo"></a>
+          <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid mx-1 mx-md-0" src="./images/frenchnow_logo_font_01.svg" alt="Frenchnow_logo"></a>
       </div>
 
       <div class="order-md-3" id="language-switch" onclick="toggleLanguage()"> <!-- Add order-md-2 to move it to the middle on medium and large devices -->
@@ -91,8 +91,6 @@
           </ul>
       </div>
 
-
-
   </div>
 </nav>
 
@@ -107,7 +105,7 @@
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <p class="mt-4">Landingpage, optimised for Mobile and Desktop, fully responsive.</p>
-            <p class="mt-5"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch.</span></p>
+            <p class="mt-4"><strong class="text-uppercase">Let's connect</strong><span> - Click on icon to call directly or send mail to get in touch.</span></p>
           </div>
         </div>
  
@@ -158,7 +156,7 @@
           </div>
         </div>
       </div>
-
+<!--SAME SAME GERMAN-->
       <div class="tf-quotes-section">
         <div class="carousel slide mt-5" id="tf-carousel" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -375,7 +373,7 @@
                 </div>
                 <div class="row">
                   <div class="col text-center text-md-left text-lg-left mt-3">
-                    <button class="btn btn-primary" type="submit">Senden</button>
+                    <button class="btn btn-primary btn-send" type="submit">Senden</button>
                   </div>
                 </div>
               </form>
@@ -392,7 +390,7 @@
           <div class="row justify-content-center d-md-none">
             <div class="col-md-3 text-center pt-3">
               <a href="#" style="display: inline-block;">
-                <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-4" aria-hidden="true" name="" id="" href="#" role=""></i>
+                <i class="fa-solid fa-circle-chevron-up fa-3x btn own-btnup pt-4" aria-hidden="true" name="" id="" href="#" role=""></i>
               </a>
             </div>         
           </div>
@@ -458,8 +456,6 @@
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:your.email@example.com';
   });
-  
-
 </script>
     <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
