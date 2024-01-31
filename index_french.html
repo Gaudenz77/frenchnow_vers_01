@@ -77,10 +77,22 @@
             <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid mx-1 mx-md-0" src="./images/frenchnow_logo_font_01.svg" alt="Frenchnow_logo"></a>
           </div>
 
-          <div class="order-md-3" id="language-switch" onclick="toggleLanguage()"> <!-- Add order-md-2 to move it to the middle on medium and large devices -->
+          <!-- <div class="order-md-3" id="language-switch" onclick="toggleLanguage()"> 
             <img id="flagFr" class="img-fluid mx-2" src="./images/france.png" alt="France Flag">FR&nbsp;&nbsp;
             <img id="flagDeFr" class="img-fluid" src="./images/germany.png" alt="German Flag">&nbsp;&nbsp;de
+          </div> -->
+
+          <div class="order-md-3" id="language-switch">
+            <!-- Inside the <body> section of your HTML file -->
+              <select id="languageDropdown" onchange="changeLanguage(this)">
+                <option value="index.html" style="background-image:url('./images/germany.png');" id="optionDe">German</option>
+                <option value="index_french.html" id="optionFr">French</option>
+                <option value="index_rus.html" id="optionRu"> Russian</option>
+              </select>
+  
           </div>
+        
+        
 
           <div class="collapse navbar-collapse justify-content-end order-md-2" id="navbarNav"> <!-- Add order-md-3 to move it to the right on medium and large devices -->
               <ul class="nav navbar-nav mx-3">
@@ -435,7 +447,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script>
   /* LANGUAGE TOGGLE */
-  function toggleLanguage() {
+/*   function toggleLanguage() {
     var flag = document.getElementById('flagFr');
     var currentLanguage = flag.src.includes('germany.png') ? 'germany' : 'france';
     var newLanguage = currentLanguage === 'germany' ? 'france' : 'germany';
@@ -447,7 +459,7 @@
     var newWebsite = currentLanguage === 'germany' ? 'index_french.html' : 'index.html';
 
     window.location.href = newWebsite;
-  }
+  } */
   
     /* MAILTO FUNCTION START */
 

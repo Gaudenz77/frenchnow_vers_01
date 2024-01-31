@@ -527,7 +527,7 @@ a#menu-icon.close .bar:last-child {
   cursor: pointer;
 }
 
-#flagDe {
+/* #flagDe {
   width:1.6rem;
   height:auto;
 }
@@ -546,6 +546,43 @@ a#menu-icon.close .bar:last-child {
   width:1rem;
   height:auto;
 }
+
+#flagRus {
+  width:1.6rem;
+  height:auto;
+}
+
+#flagFrRus {
+  width:1.6rem;
+  height:auto;
+}
+
+#flagRuDe {
+  width:1rem;
+  height:auto;
+}
+
+#flagRuFr {
+  width:1rem;
+  height:auto;
+} */
+
+#flagDe {
+  width:1rem;
+  height:auto;
+}
+
+#flagFr {
+  width:1rem;
+  height:auto;
+}
+
+#flagRu {
+  width:1rem;
+  height:auto;
+}
+
+
 
 
 .text-lastSection {
