@@ -463,15 +463,6 @@
       // Get the current page URL
   var currentPage = window.location.href;
 
-  // Set the selected attribute based on the current page
-  if (currentPage.includes("index_french.html")) {
-    document.getElementById("optionFr").selected = true;
-  } else if (currentPage.includes("index_rus.html")) {
-    document.getElementById("optionRu").selected = true;
-  } else {
-    document.getElementById("optionDe").selected = true;
-  }
-
   document.getElementById('mailbutton2').addEventListener('click', function() {
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:your.email@example.com';
