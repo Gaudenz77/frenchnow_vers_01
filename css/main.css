@@ -297,6 +297,13 @@ body {
   .tf-header::before  {
     height:700px;
   }
+
+  .imgLastSection {
+    height:700px;
+    position: relative;
+    background-size: cover;
+  
+  }
 }
 
 /* @media (max-width: 750px) and (min-width: 810px) and (orientation: landscape) {
@@ -329,6 +336,13 @@ body {
 
   .tf-header::before  {
     height:650px;
+  }
+
+  .imgLastSection {
+    height:650px;
+    position: relative;
+    background-size: cover;
+  
   }
 }
 
@@ -540,12 +554,7 @@ a#menu-icon.close .bar:last-child {
   z-index:0;
 }
 
-.imgLastSection {
-  height:650px;
-  position: relative;
-  background-size: cover;
 
-}
 
 .footerOwn {
   height:4rem;
