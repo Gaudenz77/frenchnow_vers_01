@@ -582,7 +582,10 @@ a#menu-icon.close .bar:last-child {
   height:auto;
 }
 
-
+.flag-icon {
+  width:1rem;
+  height:auto;
+}
 
 
 .text-lastSection {

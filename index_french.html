@@ -83,13 +83,22 @@
           </div> -->
 
           <div class="order-md-3" id="language-switch">
-            <!-- Inside the <body> section of your HTML file -->
-              <select id="languageDropdown" onchange="changeLanguage(this)">
-                <option value="index.html" style="background-image:url('./images/germany.png');" id="optionDe">German</option>
-                <option value="index_french.html" id="optionFr">French</option>
-                <option value="index_rus.html" id="optionRu"> Russian</option>
-              </select>
-  
+            <div class="dropdown">
+              <button class="btn text-light dropdown-toggle dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span id="selectedLanguage"><img class="flag-icon pb-1" src="./images/france.png" alt="French Flag"> French</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="index.html" onclick="setActiveLanguage('germany')">
+                  <img class="flag-icon pb-1" src="./images/germany.png" alt="German Flag"> German
+                </a>
+                <a class="dropdown-item" href="index_french.html" onclick="setActiveLanguage('france')">
+                  <!-- <img class="flag-icon pb-1" src="./images/france.png" alt="French Flag"> French -->
+                </a>
+                <a class="dropdown-item" href="index_rus.html" onclick="setActiveLanguage('russia')">
+                  <img class="flag-icon pb-1" src="./images/russia.png" alt="Russian Flag"> Russian
+                </a>
+              </div>
+            </div>
           </div>
         
           <div class="collapse navbar-collapse justify-content-end order-md-2" id="navbarNav"> <!-- Add order-md-3 to move it to the right on medium and large devices -->
