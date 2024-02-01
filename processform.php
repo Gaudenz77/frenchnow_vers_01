@@ -28,7 +28,7 @@
                         echo '<div class="alert alert-danger" role="alert">Invalid email address. Please enter a valid email.</div>';
                     } else {
                         $to = 'gaudenz.raiber@gmail.com'; // Your email address
-                        $subject = 'ZAP-Formular';
+                        $subject = 'Frenchnow-Kontakt-Formular';
                         $message = "Name: $name\nEmail: $email\nMessage:\n$message";
                         $headers = 'From: ' . $email;
 
@@ -43,7 +43,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-4 text-center">
-                        <a href="index.html" class="btn btn-primary">Zurück</a>
+                        <a id="backButton" class="btn btn-primary">Zurück</a>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -55,6 +55,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("backButton").addEventListener("click", function() {
+            // Get the URL of the referring page
+            var referringPage = document.referrer;
+
+            // Redirect to the referring page
+            window.location.href = referringPage;
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
