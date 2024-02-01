@@ -11,7 +11,7 @@
         <div class="row justify-content-center align-items-center" style="height: 100vh;">
             <div class="col-md-4 col-12 text-center">
             <img
-            src="images/1-hero-image.jpg"
+            src="images/frenchnow_logo_font_01.svg"
             class="mb-5"
             alt="Your Logo"
             style="width: 300px; height: auto"
@@ -21,7 +21,7 @@
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
                     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $to = 'cvsenger@gmail.com'; // Your email address
+                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
                         $subject = 'ZAP-Mail';
                         $message = 'New email subscription: ' . $email;
                         $headers = 'From: ' . $email;

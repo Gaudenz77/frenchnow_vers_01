@@ -11,7 +11,7 @@
         <div class="row justify-content-center align-items-center" style="height: 100vh;">
             <div class="col-md-4 text-center">
             <img
-            src="images/1-hero-image.jpg"
+            src="images/frenchnow_logo_font_01.svg"
             class="mb-5"
             alt="Your Logo"
             style="width: 300px; height: auto"/>
@@ -27,7 +27,7 @@
                     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         echo '<div class="alert alert-danger" role="alert">Invalid email address. Please enter a valid email.</div>';
                     } else {
-                        $to = 'cvsenger@gmail.com'; // Your email address
+                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
                         $subject = 'ZAP-Formular';
                         $message = "Name: $name\nEmail: $email\nMessage:\n$message";
                         $headers = 'From: ' . $email;
