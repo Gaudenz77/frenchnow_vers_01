@@ -420,6 +420,13 @@ a#menu-icon.close .bar:last-child {
   height:auto;
 }
 
+.dropdown-menu {
+  min-width: 5rem !important;
+}
+
+/* .dropdown-menu.show {
+  min-width: 5rem !important;
+} */
 
 .text-lastSection {
   color:white !important;
