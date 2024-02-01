@@ -17,7 +17,7 @@
             style="width: 300px; height: auto"/>
 
                 <?php
-                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                /* if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $name = $_POST['name'];
                     $email = filter_var($_POST['_replyto'], FILTER_SANITIZE_EMAIL);
                     $message = $_POST['message'];
@@ -27,7 +27,7 @@
                     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         echo '<div class="alert alert-danger" role="alert">Invalid email address. Please enter a valid email.</div>';
                     } else {
-                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
+                        $to = 'gaudenz.raiber@gmail.com'; 
                         $subject = 'Frenchnow-Kontakt-Formular';
                         $message = "Name: $name\nEmail: $email\nMessage:\n$message";
                         $headers = 'From: ' . $email;
@@ -38,18 +38,96 @@
                             echo '<div class="alert alert-danger" role="alert">Message delivery failed. Please try again later.</div>';
                         }
                     }
+                } */
+                ?>
+
+                <?php
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    $name = $_POST['name'];
+                    $email = filter_var($_POST['_replyto'], FILTER_SANITIZE_EMAIL);
+                    $message = $_POST['message'];
+                    $language = $_POST['language'];
+
+                    if (empty($name) || empty($email) || empty($message)) {
+                        echo '<div class="alert alert-danger" role="alert">' . getErrorMessage($language) . '</div>';
+                    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        echo '<div class="alert alert-danger" role="alert">' . getEmailErrorMessage($language) . '</div>';
+                    } else {
+                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
+                        $subject = 'Frenchnow-Kontakt-Formular';
+                        $message = "Name: $name\nEmail: $email\nMessage:\n$message";
+                        $headers = 'From: ' . $email;
+
+                        if (mail($to, $subject, $message, $headers)) {
+                            echo '<div class="alert alert-info" role="alert">' . getSuccessMessage($language) . '</div>';
+                        } else {
+                            echo '<div class="alert alert-danger" role="alert">' . getFailureMessage($language) . '</div>';
+                        }
+                    }
+                }
+
+                function getErrorMessage($language) {
+                    // Implement logic to return the appropriate error message for the language
+                    // Default to German if the language is not specified or not supported
+                    switch ($language) {
+                        case 'french':
+                            return 'Erreur: Tous les champs sont obligatoires. Veuillez remplir le formulaire complètement.';
+                        case 'russian':
+                            return 'Ошибка: Все поля обязательны к заполнению. Пожалуйста, заполните форму полностью.';
+                        default:
+                            return 'Fehler: Alle Felder sind erforderlich. Bitte füllen Sie das Formular vollständig aus.';
+                    }
+                }
+
+                function getEmailErrorMessage($language) {
+                    // Implement logic to return the appropriate email error message for the language
+                    // Default to German if the language is not specified or not supported
+                    switch ($language) {
+                        case 'french':
+                            return 'Erreur: Adresse e-mail invalide. Veuillez saisir une adresse e-mail valide.';
+                        case 'russian':
+                            return 'Ошибка: Неверный адрес электронной почты. Пожалуйста, введите действительный адрес электронной почты.';
+                        default:
+                            return 'Fehler: Ungültige E-Mail-Adresse. Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+                    }
+                }
+
+                function getSuccessMessage($language) {
+                    // Implement logic to return the appropriate success message for the language
+                    // Default to German if the language is not specified or not supported
+                    switch ($language) {
+                        case 'french':
+                            return 'Merci. Nous vous répondrons sous peu.';
+                        case 'russian':
+                            return 'Большое спасибо. Мы скоро к тебе вернемся.';
+                        default:
+                            return 'Vielen Dank. Wir melden uns in Kürze.';
+                    }
+                }
+
+                function getFailureMessage($language) {
+                    // Implement logic to return the appropriate failure message for the language
+                    // Default to German if the language is not specified or not supported
+                    switch ($language) {
+                        case 'french':
+                            return 'Échec de la livraison du message. Veuillez réessayer plus tard.';
+                        case 'russian':
+                            return 'Ошибка доставки сообщения. Пожалуйста, попробуйте позже.';
+                        default:
+                            return 'Message delivery failed. Please try again later.';
+                    }
                 }
                 ?>
 
                 <div class="row justify-content-center">
                     <div class="col-4 text-center">
-                        <a id="backButton" class="btn btn-primary">Zurück</a>
+                    <a id="backButton" class="btn btn-primary" data-language="<?php echo $language; ?>">Zurück</a>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6">
+                    <!-- <div class="col-6">
                         <img src="images/zap-bestehen-qr.png" class="img-fluid mt-3" alt="qr-code">
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -63,6 +141,24 @@
 
             // Redirect to the referring page
             window.location.href = referringPage;
+        });
+
+        // Change Button Label according to Languages Selected
+
+        document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve the language from the data attribute
+        var language = document.getElementById("backButton").getAttribute("data-language");
+
+        // Set the button label based on the language
+        switch (language) {
+            case 'french':
+                document.getElementById("backButton").innerText = 'Retour';
+                break;
+            case 'russian':
+                document.getElementById("backButton").innerText = 'Назад';
+                break;
+            // Add more cases if needed for other languages
+        }
         });
     </script>
 
