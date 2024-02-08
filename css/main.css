@@ -503,7 +503,7 @@ blockquoteOwn:before {
   display: block;
   padding-left: 10px;
   content: "\201C";
-  /* content: "\00AB"; */
+  /* content: "\00AB"; aka GUILMET «» in French/Russian? */
   font-size: 100px;
   position: absolute;
   left: -20px;
