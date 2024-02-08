@@ -83,7 +83,8 @@
   }
 
 .tf-work-section p {
-  padding-right: 3rem; 
+  /* padding-right: 3rem; */ 
+  padding-right: 0rem;
 }
 
 @media (max-width: 767.98px) {
@@ -483,5 +484,76 @@ a#menu-icon.close .bar:last-child {
 
 .footerOwn {
   height:4rem;
+}
+
+blockquoteOwn {
+  /* font-family: Georgia, serif; */
+  font-size: 1rem;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquoteOwn:before {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  /* content: "\00AB"; */
+  font-size: 100px;
+  position: absolute;
+  left: -20px;
+  /* top: -20px; */
+  top: -35px;
+  color: #7a7a7a;
+}
+
+blockquoteOwn cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquoteOwn cite:before {
+  content: "\2014 \2009";
+}
+
+blockquoteRight {
+  /* font-family: Georgia, serif; */
+  font-size: 1rem;
+  font-style: italic;
+  width: 500px;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+/* blockquoteRight:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+} */
+
+blockquoteRight cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquoteRight cite:before {
+  content: "\2014 \2009";
 }
 /* OWN CSS END ===================================================================================================== */
