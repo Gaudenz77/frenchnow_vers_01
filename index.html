@@ -38,6 +38,7 @@
     </noscript>
   </head>
   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -361,15 +362,15 @@
                 <input type="hidden" name="language" value="german">
                 <div class="row no-gutters">
                   <div class="col-lg-6 col-md-12 col-sm-12 tf-contact-col">
-                    <input class="bg-light form-control" type="text" name="name" placeholder="*Vor- u./o. Nachname" required="required"/>
+                    <input class="bg-light form-control" type="text" id="name" name="name" placeholder="*Vor- u./o. Nachname" required="required"/>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12 pb-2">
-                    <input class="bg-light form-control" type="email" name="_replyto" placeholder="*Deine E-Mail-Adresse" required="required"/>
+                    <input class="bg-light form-control" type="email" id="email" name="_replyto" placeholder="*Deine E-Mail-Adresse" required="required"/>
                   </div>
                 </div>
                 <div class="row pb-2 no-gutters">
                   <div class="col-md-12 col-sm-12">
-                    <textarea class="bg-light mb-2 form-control" name="message" placeholder="*Deine Nachricht" rows="5" required="required"></textarea>
+                    <textarea class="bg-light mb-2 form-control" id="message" name="message" placeholder="*Deine Nachricht" rows="5" required="required"></textarea>
                   </div>
                 </div>
                 <div class="row">
