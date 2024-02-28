@@ -170,7 +170,7 @@
 
 /* Contact Section */
 .tf-contact-section {
-  background: url('../images/learn_french_in_paris_symbolic_01.png') no-repeat center center;
+  background: url('../images/learn_french_in_paris_symbolic_01.webp') no-repeat center center;
   height:120%;
 }
 
@@ -296,6 +296,19 @@ body {
   border-radius:0;
   width:60%;
 }
+
+.textCourses {
+  color:#333;
+}
+
+.cardlinkOwn {
+  color:#043461 !important;
+}
+
+.cardlinkOwn :hover{
+  color:#2b83d6 !important;
+}
+
 
 /* Buttons ---------------------------------------------------- */
 

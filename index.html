@@ -29,17 +29,19 @@
     <link rel="stylesheet"   href="css/bootstrap.min.css?ver=1.2.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css?ver=1.2.0"   >
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-09C8XT8JMF');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-09C8XT8JMF');
+    </script>
+  </head>
+  
 
   <body id="top">
 
@@ -138,9 +140,9 @@
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 pt-2">           
-            <button type="button" role="button" class="btn btn-ownblue"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
-            <input type="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
-            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
+            <button type="button" role="button" id="buttonphone" name="phonenumber" class="btn btn-ownblue" aria-label="call"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
+            <input type="email" id="email" name="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
+            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2" aria-label="e-mail"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
           </div>
         </div>
       </div>
@@ -159,7 +161,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_professional_01.png" alt="courses-professional-1"/>
                 <div class="card-body">
                   <h3>Französisch Niveau Professional / Business</h3>
-                  <p class="text-muted">Als erfahrene Lehrkraft biete ich maßgeschneiderten Unterricht an, um Ihre Französischkenntnisse auf professionellem Niveau zu festigen. Erlernen Sie branchenspezifisches Vokabular, frischen Sie Ihre Grammatikkenntnisse auf und perfektionieren Sie vor allem Ihre mündliche Kommunikation für einen kompetenten Auftritt im beruflichen Umfeld. Der Kurs ermöglicht Ihnen, Ihre Schwerpunkte selbst festzulegen und alle vier Sprachfertigkeiten (Leseverstehen, Hörverstehen, schriftlicher und mündlicher Ausdruck) zu trainieren. In einem Privatkurs kann ich zudem individuell auf Ihre Bedürfnisse eingehen. Melden Sie sich jetzt an und stärken Sie Ihre Position in der französischsprachigen Arbeitswelt mit Selbstsicherheit!</p><a class="card-link" href="#">Mehr...</a>
+                  <p class="textCourses">Als erfahrene Lehrkraft biete ich maßgeschneiderten Unterricht an, um Ihre Französischkenntnisse auf professionellem Niveau zu festigen. Erlernen Sie branchenspezifisches Vokabular, frischen Sie Ihre Grammatikkenntnisse auf und perfektionieren Sie vor allem Ihre mündliche Kommunikation für einen kompetenten Auftritt im beruflichen Umfeld. Der Kurs ermöglicht Ihnen, Ihre Schwerpunkte selbst festzulegen und alle vier Sprachfertigkeiten (Leseverstehen, Hörverstehen, schriftlicher und mündlicher Ausdruck) zu trainieren. In einem Privatkurs kann ich zudem individuell auf Ihre Bedürfnisse eingehen. Melden Sie sich jetzt an und stärken Sie Ihre Position in der französischsprachigen Arbeitswelt mit Selbstsicherheit!</p><a class="cardlinkOwn" href="#"><strong>Mehr...</strong></a>
                 </div>
               </div>
             </div>
@@ -168,7 +170,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_general_02.png" alt="courses-general-2"/>
                 <div class="card-body">
                   <h3>Französisch Konversationskurs allgemein</h3>
-                  <p class="text-muted">Möchten Sie eine Sprache schnell und fließend sprechen, um sich mühelos zu unterhalten? Dann ist mein Konversationskurs in privater Umgebung genau das Richtige für Sie! In diesem individuellen als Einzelunterricht oder in Kleinstgruppen zu maximal 3 Personen erteilten Unterricht liegt der Fokus besonders auf der mündlichen Kommunikation. So gewinnen Sie Sicherheit im Sprechen und können sich effektiver verständigen.Wir trainieren gemeinsam Ihre Argumentations- und Ausdrucksfähigkeiten. Durch verschiedene Übungen vertiefen Sie schnell Ihren Wortschatz und lernen, an Gesprächen und Diskussionen teilzunehmen sowie Ihre Meinung zu äußern.</p><a class="card-link" href="#">Mehr...</a>
+                  <p class="textCourses">Möchten Sie eine Sprache schnell und fließend sprechen, um sich mühelos zu unterhalten? Dann ist mein Konversationskurs in privater Umgebung genau das Richtige für Sie! In diesem individuellen als Einzelunterricht oder in Kleinstgruppen zu maximal 3 Personen erteilten Unterricht liegt der Fokus besonders auf der mündlichen Kommunikation. So gewinnen Sie Sicherheit im Sprechen und können sich effektiver verständigen.Wir trainieren gemeinsam Ihre Argumentations- und Ausdrucksfähigkeiten. Durch verschiedene Übungen vertiefen Sie schnell Ihren Wortschatz und lernen, an Gesprächen und Diskussionen teilzunehmen sowie Ihre Meinung zu äußern.</p><a class="cardlinkOwn" href="#"><strong>Mehr...</strong></a>
                 </div>
               </div>
             </div>
@@ -176,7 +178,7 @@
               <div class="card"><img class="img-fluid card-img-top" alt="image-beginner" src="images/fr_ench_exchange_ef_01.jpeg"/>
                 <div class="card-body">
                   <h3>Französisch für Teens &  Kids</h3>
-                  <p class="text-muted">Französisch ist in der Schweiz nicht fremd, sondern Landessprache. Über ein Viertel der Schweizer Bevölkerung spricht Französisch, daher fast obligatorisch für Bewerbungen. Es ist nie zu früh, Französisch zu lernen! Je früher, desto besser beherrschen Sie die Sprache für Schule und Beruf in der Schweiz. Meine persönliche Lernumgebung bietet qualifizierten Französischunterricht ab dem sechsten Lebensjahr. Mein Fokus liegt darauf, verpassten Schulstoff aufzuholen oder Kenntnisse zu vertiefen, während Erfolgserlebnisse eine motivierende Lernatmosphäre schaffen. Sprachen lernen macht Spaß, stärkt Talente und legt Grundlagen für beruflichen Erfolg.</p><a class="card-link" href="#">Mehr...</a>
+                  <p class="textCourses">Französisch ist in der Schweiz nicht fremd, sondern Landessprache. Über ein Viertel der Schweizer Bevölkerung spricht Französisch, daher fast obligatorisch für Bewerbungen. Es ist nie zu früh, Französisch zu lernen! Je früher, desto besser beherrschen Sie die Sprache für Schule und Beruf in der Schweiz. Meine persönliche Lernumgebung bietet qualifizierten Französischunterricht ab dem sechsten Lebensjahr. Mein Fokus liegt darauf, verpassten Schulstoff aufzuholen oder Kenntnisse zu vertiefen, während Erfolgserlebnisse eine motivierende Lernatmosphäre schaffen. Sprachen lernen macht Spaß, stärkt Talente und legt Grundlagen für beruflichen Erfolg.</p><a class="cardlinkOwn" href="#"><strong>Mehr...</strong></a>
                 </div>
               </div>
             </div>
@@ -319,10 +321,10 @@
           <div class="row justify-content-evenly">
             <div class="col-md-6 col-sm-12 pt-2">
               <div class="card align-items-center">
-                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.png" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
+                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.webp" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
                 <div class="card-body">
-                  <p class="text-muted"><blockquoteOwn>Als Muttersprachlerin im Französischen stehe ich als extrovertierte und charismatische Persönlichkeit dafür ein, meine Lernenden optimal zu motivieren, ihre Ziele zu erreichen. In einer entspannten und positiven Atmosphäre lautet mein Motto: ernsthaft lernen mit Freude und guter Laune! Mit einem Master in Business und Erfahrung in verschiedenen Funktionen (Finanzen, Verkauf, Administration) in verschiedenen Ländern bringe ich eine umfangreiche Berufs- und Lebenserfahrung mit. Heute, als Mutter von drei Teenagern, habe ich mich auf Fremdsprachenpädagogik spezialisiert und verfüge über die Diplome Eurolta und SVEB1.<br>Mein Unterricht findet entweder bei Ihnen zu Hause oder im Seefeld, Zürich statt, und auf Anfrage kann auch ein Raum am Central, Zürich angemietet werden.</blockquoteOwn></p>
-                  <!-- <a class="card-link" href="#">Mehr...</a> -->
+                  <p class="textCourses"><blockquoteOwn>Als Muttersprachlerin im Französischen stehe ich als extrovertierte und charismatische Persönlichkeit dafür ein, meine Lernenden optimal zu motivieren, ihre Ziele zu erreichen. In einer entspannten und positiven Atmosphäre lautet mein Motto: ernsthaft lernen mit Freude und guter Laune! Mit einem Master in Business und Erfahrung in verschiedenen Funktionen (Finanzen, Verkauf, Administration) in verschiedenen Ländern bringe ich eine umfangreiche Berufs- und Lebenserfahrung mit. Heute, als Mutter von drei Teenagern, habe ich mich auf Fremdsprachenpädagogik spezialisiert und verfüge über die Diplome Eurolta und SVEB1.<br>Mein Unterricht findet entweder bei Ihnen zu Hause oder im Seefeld, Zürich statt, und auf Anfrage kann auch ein Raum am Central, Zürich angemietet werden.</blockquoteOwn></p>
+                  <!-- <a class="cardlinkOwn" href="#"><strong>Mehr...</strong></a> -->
                 </div>
               </div>
             </div>
@@ -330,11 +332,11 @@
               <!-- <div class="col-md-6 col-sm-12 pt-2"> -->
               <div class="card align-items-center">
                 <div class="row justify-content-center">
-                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.png" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
+                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.webp" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
                 </div>
                 <div class="card-body pt-4">
-                  <p class="text-muted"><blockquoteRight>Ich biete individuell zugeschnittene Programme an, die auf Ihre Bedürfnisse abgestimmt sind, sei es für Telefonate, E-Mails, Verhandlungen, Konversation oder Reisevorbereitungen. Meine Lernmethode, anwendbar für Anfänger bis Fortgeschrittene, fördert kontinuierlichen Fortschritt im allgemeinen Sprachgebrauch oder im Business-Französisch. Unternehmen, Institutionen und Privatpersonen (Erwachsene, Teenager) profitieren von meinem flexiblen Unterrichtsstil, der auf unterschiedliche Persönlichkeiten zugeschnitten ist.<br>Zu meinen Stärken gehören gezieltes Lernen, schnelle und optimale Zielerfüllung sowie empathisches Eingehen auf individuelle Bedürfnisse.</blockquoteRight></p>
-                  <a class="card-link" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspAlexandra Descamps auf LinkedIn</a>
+                  <p class="textCourses"><blockquoteRight>Ich biete individuell zugeschnittene Programme an, die auf Ihre Bedürfnisse abgestimmt sind, sei es für Telefonate, E-Mails, Verhandlungen, Konversation oder Reisevorbereitungen. Meine Lernmethode, anwendbar für Anfänger bis Fortgeschrittene, fördert kontinuierlichen Fortschritt im allgemeinen Sprachgebrauch oder im Business-Französisch. Unternehmen, Institutionen und Privatpersonen (Erwachsene, Teenager) profitieren von meinem flexiblen Unterrichtsstil, der auf unterschiedliche Persönlichkeiten zugeschnitten ist.<br>Zu meinen Stärken gehören gezieltes Lernen, schnelle und optimale Zielerfüllung sowie empathisches Eingehen auf individuelle Bedürfnisse.</blockquoteRight></p>
+                  <a class="cardlinkOwn" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspAlexandra Descamps auf LinkedIn</a>
                 </div>
               </div>
             </div>

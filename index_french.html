@@ -29,17 +29,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css?ver=1.2.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css?ver=1.2.0"   >
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-09C8XT8JMF');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-09C8XT8JMF');
+    </script>
+  </head>
+  
 
   <body id="top"> 
 
@@ -138,9 +140,9 @@
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 pt-2">
-            <button type="button" role="button" class="btn btn-ownblue"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
-            <input type="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
-            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
+            <button type="button" role="button" id="buttonphone" name="phonenumber" class="btn btn-ownblue" aria-label="call"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
+            <input type="email" id="email" name="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
+            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2" aria-label="e-mail"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
           </div>
         </div>
       </div>
@@ -159,7 +161,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_professional_01.png" alt="courses-professional-1"/>
                 <div class="card-body">
                   <h3>Français au Niveau Professionnel / Business</h3>
-                  <p class="text-muted">En tant que professeur expérimenté, je propose des cours sur mesure pour consolider vos compétences en français à un niveau professionnel. Apprenez le vocabulaire spécifique au secteur, perfectionnez vos compétences grammaticales et, surtout, perfectionnez votre communication orale pour une apparition compétente dans un environnement professionnel. Le cours vous permet de déterminer vos propres priorités et d'entraîner les quatre compétences linguistiques (compréhension écrite, compréhension orale, expression écrite et orale). En cours particulier je peux également répondre individuellement à vos besoins. Inscrivez-vous dès maintenant et renforcez votre position dans le monde du travail francophone en toute confiance !</p><a class="card-link" href="#">En savoir plus...</a>
+                  <p class="textCourses">En tant que professeur expérimenté, je propose des cours sur mesure pour consolider vos compétences en français à un niveau professionnel. Apprenez le vocabulaire spécifique au secteur, perfectionnez vos compétences grammaticales et, surtout, perfectionnez votre communication orale pour une apparition compétente dans un environnement professionnel. Le cours vous permet de déterminer vos propres priorités et d'entraîner les quatre compétences linguistiques (compréhension écrite, compréhension orale, expression écrite et orale). En cours particulier je peux également répondre individuellement à vos besoins. Inscrivez-vous dès maintenant et renforcez votre position dans le monde du travail francophone en toute confiance !</p><a class="cardlinkOwn" href="#"><strong>En savoir plus...</strong></a>
                 </div>
               </div>
             </div>
@@ -168,7 +170,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_general_02.png" alt="courses-general-2"/>
                 <div class="card-body">
                   <h3>Français au Niveau Général / Conversation</h3>
-                  <p class="text-muted">Voulez-vous parler une langue rapidement et couramment afin de pouvoir converser sans effort ? Alors mon cours de conversation dans un cadre privé est fait pour vous ! Dans ces cours individuels, dispensés sous forme de cours individuels ou en petits groupes de 3 personnes maximum, l'accent est particulièrement mis sur la communication orale. Cela vous aidera à prendre confiance en vous pour parler et vous permettra de communiquer plus efficacement.Nous développerons ensemble vos capacités d’argumentation et d’expression. A travers divers exercices, vous approfondirez rapidement votre vocabulaire et apprendrez à prendre part à des conversations et des discussions et à exprimer vos opinions.</p><a class="card-link" href="#">En savoir plus...</a>
+                  <p class="textCourses">Voulez-vous parler une langue rapidement et couramment afin de pouvoir converser sans effort ? Alors mon cours de conversation dans un cadre privé est fait pour vous ! Dans ces cours individuels, dispensés sous forme de cours individuels ou en petits groupes de 3 personnes maximum, l'accent est particulièrement mis sur la communication orale. Cela vous aidera à prendre confiance en vous pour parler et vous permettra de communiquer plus efficacement.Nous développerons ensemble vos capacités d’argumentation et d’expression. A travers divers exercices, vous approfondirez rapidement votre vocabulaire et apprendrez à prendre part à des conversations et des discussions et à exprimer vos opinions.</p><a class="cardlinkOwn" href="#"><strong>En savoir plus...</strong></a>
                 </div>
               </div>
             </div>
@@ -176,7 +178,7 @@
               <div class="card"><img class="img-fluid card-img-top" alt="image-beginner" src="images//fr_ench_exchange_ef_01.jpeg"/>
                 <div class="card-body">
                   <h3>Français pour Ados et enfants</h3>
-                  <p class="text-muted">Le français n'est pas étranger à la Suisse, mais plutôt la langue nationale. Plus d'un quart de la population suisse parle français, ce qui le rend presque obligatoire pour postuler. Il n'est jamais trop tôt pour apprendre le français ! Plus tôt vous maîtriserez la langue pour l’école et le travail en Suisse. Mon environnement d'apprentissage personnel propose des cours de français qualifiés dès l'âge de 14 ans. Mon objectif est de rattraper le matériel scolaire manqué ou d'approfondir mes connaissances, tandis que la réussite crée une atmosphère d'apprentissage motivante. Apprendre les langues est amusant, renforce les talents et jette les bases de la réussite professionnelle.</p><a class="card-link" href="#">En savoir plus...</a>
+                  <p class="textCourses">Le français n'est pas étranger à la Suisse, mais plutôt la langue nationale. Plus d'un quart de la population suisse parle français, ce qui le rend presque obligatoire pour postuler. Il n'est jamais trop tôt pour apprendre le français ! Plus tôt vous maîtriserez la langue pour l’école et le travail en Suisse. Mon environnement d'apprentissage personnel propose des cours de français qualifiés dès l'âge de 14 ans. Mon objectif est de rattraper le matériel scolaire manqué ou d'approfondir mes connaissances, tandis que la réussite crée une atmosphère d'apprentissage motivante. Apprendre les langues est amusant, renforce les talents et jette les bases de la réussite professionnelle.</p><a class="cardlinkOwn" href="#"><strong>En savoir plus...</strong></a>
                 </div>
               </div>
             </div>
@@ -318,11 +320,11 @@
           <div class="row justify-content-evenly">
             <div class="col-md-6 col-sm-12 pt-2">
               <div class="card align-items-center">
-                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.png" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
+                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.webp" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
                 <div class="card-body">
-                  <p class="text-muted"><blockquoteOwn>De langue maternelle française, de personnalité extravertie et charismatique, je m'engage à motiver de manière optimale mes apprenants pour atteindre leurs objectifs. Dans une ambiance détendue et positive, ma devise est : apprendre sérieusement dans la joie et la bonne humeur ! Fort d'un master en commerce et d'une expérience dans diverses fonctions (finance, vente, administration) dans différents pays, j'apporte une vaste expérience professionnelle et de vie. Aujourd'hui maman de trois adolescents, je me suis spécialisée dans l'enseignement des langues étrangères et suis titulaire des diplômes Eurolta et SVEB1.
+                  <p class="textCourses"><blockquoteOwn>De langue maternelle française, de personnalité extravertie et charismatique, je m'engage à motiver de manière optimale mes apprenants pour atteindre leurs objectifs. Dans une ambiance détendue et positive, ma devise est : apprendre sérieusement dans la joie et la bonne humeur ! Fort d'un master en commerce et d'une expérience dans diverses fonctions (finance, vente, administration) dans différents pays, j'apporte une vaste expérience professionnelle et de vie. Aujourd'hui maman de trois adolescents, je me suis spécialisée dans l'enseignement des langues étrangères et suis titulaire des diplômes Eurolta et SVEB1.
                     Mes cours ont lieu soit à votre domicile, soit à Seefeld, Zurich, et sur demande, une chambre au Central, Zurich peut également être louée.</blockquoteOwn></p>
-                  <!-- <a class="card-link" href="#">En savoir plus...</a> -->
+                  <!-- <a class="cardlinkOwn" href="#"><strong>En savoir plus...</strong></a> -->
                 </div>
               </div>
             </div>
@@ -330,12 +332,12 @@
               <!-- <div class="col-md-6 col-sm-12 pt-2"> -->
               <div class="card align-items-center">
                 <div class="row justify-content-center">
-                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.png" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
+                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.webp" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
                 </div>
                 <div class="card-body pt-4">
-                  <p class="text-muted"><blockquoteRight>Je propose des programmes personnalisés adaptés à vos besoins, que ce soit pour les appels téléphoniques, les e-mails, les négociations, les conversations ou les préparatifs de voyage. Ma méthode d'apprentissage, applicable des débutants aux apprenants avancés, favorise une progression continue dans l'utilisation générale de la langue ou le français des affaires. Les entreprises, les institutions et les particuliers (adultes, adolescents) bénéficient de mon enseignement flexible et adapté à différentes personnalités.
+                  <p class="textCourses"><blockquoteRight>Je propose des programmes personnalisés adaptés à vos besoins, que ce soit pour les appels téléphoniques, les e-mails, les négociations, les conversations ou les préparatifs de voyage. Ma méthode d'apprentissage, applicable des débutants aux apprenants avancés, favorise une progression continue dans l'utilisation générale de la langue ou le français des affaires. Les entreprises, les institutions et les particuliers (adultes, adolescents) bénéficient de mon enseignement flexible et adapté à différentes personnalités.
                     Mes points forts incluent un apprentissage ciblé, la réalisation rapide et optimale des objectifs et une réponse empathique aux besoins individuels.</blockquoteRight></p>
-                    <a class="card-link" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspAlexandra Descamps sur LinkedIn</a>
+                    <a class="cardlinkOwn" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspAlexandra Descamps sur LinkedIn</a>
                 </div>
               </div>
             </div>

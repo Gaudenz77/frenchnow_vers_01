@@ -29,17 +29,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css?ver=1.2.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css?ver=1.2.0">
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-09C8XT8JMF');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-09C8XT8JMF');
+    </script>
+  </head>
+  
 
   <body id="top"> 
 
@@ -138,9 +140,9 @@
  
         <div class="row no-gutters">
           <div class="btn-group col-md-5 pt-2">
-            <button type="button" role="button" class="btn btn-ownblue"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
-            <input type="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
-            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
+            <button type="button" role="button" id="buttonphone" name="phonenumber" class="btn btn-ownblue" aria-label="call"><a href="tel:+41765044299" class="text-light"><i class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
+            <input type="email" id="email" name="email" class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example" disabled readonly><!-- Call directly / Enter email -->
+            <button type="button" role="button" class="btn btn-ownred" id="mailbutton2" aria-label="e-mail"><i class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
           </div><!-- +410765044299 -->
         </div>
       </div>
@@ -159,7 +161,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_professional_01.png" alt="courses-professional-1"/>
                 <div class="card-body">
                   <h3>Французский на профессиональном / деловом уровне</h3>
-                  <p class="text-muted">Как опытный преподаватель, я предлагаю индивидуальные курсы для закрепления ваших навыков французского языка на профессиональном уровне. Изучите отраслевую лексику, отточите навыки грамматики и, самое главное, отточите устное общение для компетентного выступления в профессиональной среде. Курс позволяет вам определить свои собственные приоритеты и тренировать четыре языковых навыка (понимание прочитанного, понимание на слух, письменное и устное выражение). На частных уроках я также могу индивидуально реагировать на ваши потребности. Зарегистрируйтесь сейчас и с полной уверенностью укрепите свои позиции во франкоязычном мире труда!</p><a class="card-link" href="#">Узнать больше...</a>
+                  <p class="textCourses">Как опытный преподаватель, я предлагаю индивидуальные курсы для закрепления ваших навыков французского языка на профессиональном уровне. Изучите отраслевую лексику, отточите навыки грамматики и, самое главное, отточите устное общение для компетентного выступления в профессиональной среде. Курс позволяет вам определить свои собственные приоритеты и тренировать четыре языковых навыка (понимание прочитанного, понимание на слух, письменное и устное выражение). На частных уроках я также могу индивидуально реагировать на ваши потребности. Зарегистрируйтесь сейчас и с полной уверенностью укрепите свои позиции во франкоязычном мире труда!</p><a class="cardlinkOwn" href="#"><strong>Узнать больше...</strong></a>
                 </div>
               </div>
             </div>
@@ -168,7 +170,7 @@
                 <img class="img-fluid card-img-top" src="images/fn_courses_general_02.png" alt="courses-general-2"/>
                 <div class="card-body">
                   <h3>Французский на общем / разговорном уровне</h3>
-                  <p class="text-muted">Вы хотите говорить на языке быстро и бегло, чтобы общаться без особых усилий? Тогда мой разговорный курс в приватной обстановке для вас! На этих индивидуальных курсах, проводимых в форме индивидуальных занятий или в небольших группах до 3 человек, особое внимание уделяется устному общению. Это поможет вам обрести уверенность в разговоре и позволит вам общаться более эффективно.Вместе мы будем развивать ваши навыки аргументации и выражения мыслей. С помощью различных упражнений вы быстро углубите свой словарный запас, научитесь принимать участие в разговорах и дискуссиях и выражать свое мнение.</p><a class="card-link" href="#">Узнать больше...</a>
+                  <p class="textCourses">Вы хотите говорить на языке быстро и бегло, чтобы общаться без особых усилий? Тогда мой разговорный курс в приватной обстановке для вас! На этих индивидуальных курсах, проводимых в форме индивидуальных занятий или в небольших группах до 3 человек, особое внимание уделяется устному общению. Это поможет вам обрести уверенность в разговоре и позволит вам общаться более эффективно.Вместе мы будем развивать ваши навыки аргументации и выражения мыслей. С помощью различных упражнений вы быстро углубите свой словарный запас, научитесь принимать участие в разговорах и дискуссиях и выражать свое мнение.</p><a class="cardlinkOwn" href="#"><strong>Узнать больше...</strong></a>
                 </div>
               </div>
             </div>
@@ -176,7 +178,7 @@
               <div class="card"><img class="img-fluid card-img-top" alt="image-beginner" src="images/fr_ench_exchange_ef_01.jpeg"/>
                 <div class="card-body">
                   <h3>Французский для подростков и детей</h3>
-                  <p class="text-muted">Французский язык не является чуждым для Швейцарии, а является ее национальным языком. Более четверти населения Швейцарии говорит по-французски, поэтому подача заявления практически обязательна. Учить французский никогда не рано! Чем раньше вы освоите язык для учебы и работы в Швейцарии. Моя личная среда обучения предлагает Квалифицированные уроки французского языка с 14 лет.. Моя цель — наверстать пропущенный школьный материал или углубить свои знания, а успех создает мотивирующую учебную атмосферу. Изучение языков доставляет удовольствие, укрепляет таланты и закладывает основу для профессионального успеха.</p><a class="card-link" href="#">Узнать больше...</a>
+                  <p class="textCourses">Французский язык не является чуждым для Швейцарии, а является ее национальным языком. Более четверти населения Швейцарии говорит по-французски, поэтому подача заявления практически обязательна. Учить французский никогда не рано! Чем раньше вы освоите язык для учебы и работы в Швейцарии. Моя личная среда обучения предлагает Квалифицированные уроки французского языка с 14 лет.. Моя цель — наверстать пропущенный школьный материал или углубить свои знания, а успех создает мотивирующую учебную атмосферу. Изучение языков доставляет удовольствие, укрепляет таланты и закладывает основу для профессионального успеха.</p><a class="cardlinkOwn" href="#"><strong>Узнать больше...</strong></a>
                 </div>
               </div>
             </div>
@@ -318,11 +320,11 @@
           <div class="row justify-content-evenly">
             <div class="col-md-6 col-sm-12 pt-2">
               <div class="card align-items-center">
-                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.png" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
+                  <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.webp" alt="alex_decamps_portrait" style="width:320px; height:auto"/>
                 <div class="card-body">
-                  <p class="text-muted"><blockquoteOwn>Носитель французского языка, экстравертный и харизматичный характер, я стремлюсь оптимально мотивировать своих учеников для достижения своих целей. В непринужденной и позитивной атмосфере мой девиз: учитесь серьезно, с радостью и хорошим настроением! Имея степень магистра в области коммерции и опыт выполнения различных функций (финансы, продажи, администрирование) в разных странах, я привношу обширный профессиональный и жизненный опыт. Сегодня я мать троих подростков, специализируюсь на преподавании иностранных языков и имею дипломы Eurolta и SVEB1.
+                  <p class="textCourses"><blockquoteOwn>Носитель французского языка, экстравертный и харизматичный характер, я стремлюсь оптимально мотивировать своих учеников для достижения своих целей. В непринужденной и позитивной атмосфере мой девиз: учитесь серьезно, с радостью и хорошим настроением! Имея степень магистра в области коммерции и опыт выполнения различных функций (финансы, продажи, администрирование) в разных странах, я привношу обширный профессиональный и жизненный опыт. Сегодня я мать троих подростков, специализируюсь на преподавании иностранных языков и имею дипломы Eurolta и SVEB1.
                     Мои курсы проходят либо у вас дома, либо в Зеефельде, Цюрих, а по запросу можно арендовать комнату в центре Цюриха.</blockquoteOwn></p>
-                  <!-- <a class="card-link" href="#">Узнать больше...</a> -->
+                  <!-- <a class="cardlinkOwn" href="#"><strong>Узнать больше...</strong></a> -->
                 </div>
               </div>
             </div>
@@ -330,12 +332,12 @@
               <!-- <div class="col-md-6 col-sm-12 pt-2"> -->
               <div class="card align-items-center">
                 <div class="row justify-content-center">
-                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.png" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
+                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.webp" alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto"/>
                 </div>
                 <div class="card-body pt-4">
-                  <p class="text-muted"><blockquoteRight>Я предлагаю персонализированные программы, адаптированные к вашим потребностям, будь то телефонные звонки, электронные письма, переговоры, разговоры или организация поездок. Мой метод обучения, применимый как для новичков, так и для продвинутых учеников, способствует постоянному прогрессу в общем использовании языка или делового французского языка. Компании, учреждения и частные лица (взрослые, подростки) получают выгоду от моего гибкого обучения, адаптированного к разным личностям.
+                  <p class="textCourses"><blockquoteRight>Я предлагаю персонализированные программы, адаптированные к вашим потребностям, будь то телефонные звонки, электронные письма, переговоры, разговоры или организация поездок. Мой метод обучения, применимый как для новичков, так и для продвинутых учеников, способствует постоянному прогрессу в общем использовании языка или делового французского языка. Компании, учреждения и частные лица (взрослые, подростки) получают выгоду от моего гибкого обучения, адаптированного к разным личностям.
                     Мои сильные стороны включают целенаправленное обучение, быстрое и оптимальное достижение целей, а также чуткое реагирование на индивидуальные потребности.</blockquoteRight></p>
-                    <a class="card-link" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspАлександра Декамп в LinkedIn</a>
+                    <a class="cardlinkOwn" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i>&nbspАлександра Декамп в LinkedIn</a>
                 </div>
               </div>
             </div>
