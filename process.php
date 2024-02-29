@@ -21,7 +21,7 @@
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
                     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
+                        $to = 'alex.descamps@outlook.com'; // Your email address
                         $subject = 'ZAP-Mail';
                         $message = 'New email subscription: ' . $email;
                         $headers = 'From: ' . $email;

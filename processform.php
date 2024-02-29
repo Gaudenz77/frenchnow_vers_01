@@ -53,7 +53,7 @@
                     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                         echo '<div class="alert alert-danger" role="alert">' . getEmailErrorMessage($language) . '</div>';
                     } else {
-                        $to = 'gaudenz.raiber@gmail.com'; // Your email address
+                        $to = 'alex.descamps@outlook.com'; // Your email address
                         $subject = 'Frenchnow-Kontakt-Formular';
                         $message = "Name: $name\nEmail: $email\nMessage:\n$message";
                         $headers = 'From: ' . $email;
