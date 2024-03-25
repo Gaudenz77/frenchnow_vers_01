@@ -1,3 +1,11 @@
+// Call the function when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", detectBrowserLanguageAndRedirect);
+
+// Call the redirection function when the page loads
+redirectToLanguagePage();
+// Call the function when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", detectBrowserLanguageAndRedirect);
+
 // HAMBURGER MENU SCRIPT ----------------------------------------------------------------
   const menuButton = document.querySelector("a#menu-icon");
 
@@ -65,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = selectedPage;
   });
 });
+
 
 
 
