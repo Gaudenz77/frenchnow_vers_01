@@ -31,6 +31,8 @@
     </noscript>
     <!-- <link rel="stylesheet" disabled href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css"   >
 
@@ -45,6 +47,14 @@
       gtag('config', 'G-09C8XT8JMF');
       
     </script>
+    <!-- <style>
+      #btnMeeting.btn-primary:hover {
+        background-color: transparent;
+        color: #fd0d0d; /* Bootstrap primary blue */
+        border: 1px solid #fd0d0d;
+      }
+    </style> -->
+    
     
   </head>
   
@@ -382,9 +392,22 @@
         </div>
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-6 col-sm-12 card p-3 pb-2 mx-2 mx-md-0" style="background: rgba(0, 0, 0, 0.1); border:none;">
-              <h3 class="h5 text-lastSection">Jetzt Kontakt aufnehmen</h3>
-              <!-- <form action="https://formspree.io/youremail@example.com" method="POST"> -->
+            <div class="container my-5">
+              <div class="row justify-content-center g-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-12 col-md-5">
+                  <button type="button" id="btnMeeting" class="btn btn-outline-primary  w-100 py-3" aria-label="Kostenloses Kennenlerngespräch vereinbaren">
+                    <b>Kostenloses Kennenlerngespräch vereinbaren</b>
+                  </button>
+                </div>
+                <div class="col-12 col-md-5">
+                  <button type="button" id="btnPrices" class="btn btn-outline-primary w-100 py-3" aria-label="Preisliste per E-Mail anfordern">
+                    <b>Preisliste per E-Mail anfordern</b>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-6 col-sm-12 card p-3 pb-2 mx-2 mx-md-0" style="background: rgba(0, 0, 0, 0.1); border:none;">
+              <h3 class="h5 text-lastSection">Jetzt Kontakt aufnehmen</h3>   
               <form action="processform.php" method="POST">
                 <input type="hidden" name="language" value="german">
                 <div class="row no-gutters">
@@ -406,7 +429,8 @@
                   </div>
                 </div>
               </form>
-            </div>
+            </div> -->
+            <!-- <form action="https://formspree.io/youremail@example.com" method="POST"> -->
             <!-- <div class="col-md-6 col-sm-12 float-right text-right">
               <h3 class="h5">Address</h3><span>Start Simple<br/>United States</span>
               <p></p>
@@ -443,23 +467,26 @@
       
     </div>
     
-    <!-- <footer class="footerOwn bg-dark tf-footer">
+    <footer class="footerOwn bg-dark tf-footer">
       <div class="container text-light">
         <div class="row">
-          <div class="col-md-5 col-sm-12"> &copy;Your Company Name. All rights reserved.</div>
+          <div class="col-md-5 col-sm-12"></div>
 
             <div class="col-md-2 text-center pb-2 d-none d-lg-block">
-              <a href="#" style="display: inline-block;">
+              <!-- <div class="col-md-5 col-sm-12 text-right tf-design">Design -<a href="https://templateflip.com" target="_blank">Krakatoom-Design</a> -->
+              <div class="col-md-5"><a href="https://superseite.ch" target="_blank">superseite.ch</a>
+
+              <!-- <a href="#" style="display: inline-block;">
                 <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
-              </a>
+              </a> -->
             </div>         
 
-          <div class="col-md-5 col-sm-12 text-right tf-design">Design -<a href="https://templateflip.com" target="_blank">Krakatoom-Design</a>
-          <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
+          <div class="col-md-5 col-sm-12 text-right tf-design"><a href="https://templateflip.com" target="_blank"></a>
+          <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary" style="font-size:8px;"></a>
         </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   <!-- Your custom JavaScript -->
@@ -485,10 +512,24 @@
     // Change 'your.email@example.com' to the email address you want to open in the mail client
     window.location.href = 'mailto:alex.descamps@outlook.com';
   });
+  // Mail Buttons Kennelernen, Preisliste
+  document.getElementById('btnMeeting').addEventListener('click', function () {
+  window.location.href = 'mailto:alex.descamps@outlook.com?subject=Kostenloses%20Kennenlerngespräch%20vereinbaren';
+  });
+
+  document.getElementById('btnPrices').addEventListener('click', function () {
+    window.location.href = 'mailto:alex.descamps@outlook.com?subject=Preisliste%20per%20E-Mail%20anfordern';
+  });
+
+
 </script>
     <script src="scripts/jquery.slim.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
