@@ -30,6 +30,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"/>
     </noscript>
     <!-- <link rel="stylesheet" disabled href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -390,103 +392,132 @@
         <div class="container" id="contact">
           <h2 class="h4 text-lastSection">Ihre Sprachreise beginnt hier!</h2>
         </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="container my-5">
-              <div class="row justify-content-center g-3" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col-12 col-md-5">
-                  <button type="button" id="btnMeeting" class="btn btn-outline-primary  w-100 py-3" aria-label="Kostenloses Kennenlerngespräch vereinbaren">
-                    <b>Kostenloses Kennenlerngespräch vereinbaren</b>
-                  </button>
-                </div>
-                <div class="col-12 col-md-5">
-                  <button type="button" id="btnPrices" class="btn btn-outline-primary w-100 py-3" aria-label="Preisliste per E-Mail anfordern">
-                    <b>Preisliste per E-Mail anfordern</b>
-                  </button>
-                </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="container my-5">
+      <div class="row justify-content-center g-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12 col-md-5">
+          <button type="button" id="btnMeeting" class="btn btn-outline-primary w-100 py-3" aria-label="Kostenloses Kennenlerngespräch vereinbaren">
+            <b>Kostenloses Kennenlerngespräch vereinbaren</b>
+          </button>
+        </div>
+        <div class="col-12 col-md-5">
+          <button type="button" id="btnPrices" class="btn btn-outline-primary w-100 py-3" aria-label="Preisliste per E-Mail anfordern">
+            <b>Preisliste per E-Mail anfordern</b>
+          </button>
+        </div>
+      </div>
+
+      <!-- ✅ Newsletter Signup Form Starts -->
+      <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12 col-md-6 text-center">
+          <h3 class="mb-3 text-light">Newsletter abonnieren</h3>
+          <p class="mb-4 text-light"><strong>Erhalten Sie gelegentlich Neuigkeiten & Angebote von Frenchnow.</strong></p>
+          
+          <!-- <form action="https://formspree.io/f/xanjvalk" method="POST"> -->
+          <!-- <form id="newsletterForm" action="newsletter.php" method="POST" class="needs-validation" novalidate>
+            <div class="input-group mb-3">
+              <input type="email" name="email" class="form-control" placeholder="Ihre E-Mail-Adresse" required>
+              <button class="btn btn-outline-primary" type="submit">Anmelden</button>
+            </div>
+
+            
+            <div class="row justify-content-center mb-2">
+              <div class="col-auto d-flex align-items-start">
+                
+                <input class="form-check-input mt-1" type="checkbox" id="newsletterConsent" name="consent" required>
+              </div>
+              <div class="col-auto">
+                <label class="form-check-label text-light" for="newsletterConsent">
+                  <strong>Ich stimme dem Erhalt des Newsletters zu.</strong>
+                </label>
               </div>
             </div>
-            <!-- <div class="col-md-6 col-sm-12 card p-3 pb-2 mx-2 mx-md-0" style="background: rgba(0, 0, 0, 0.1); border:none;">
-              <h3 class="h5 text-lastSection">Jetzt Kontakt aufnehmen</h3>   
-              <form action="processform.php" method="POST">
-                <input type="hidden" name="language" value="german">
-                <div class="row no-gutters">
-                  <div class="col-lg-6 col-md-12 col-sm-12 tf-contact-col">
-                    <input class="bg-light form-control" type="text" id="name" name="name" autocomplete="name" placeholder="*Vorname, Nachname" required="required"/>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-12 pb-2">
-                    <input class="bg-light form-control" type="email" id="email" name="_replyto" autocomplete="email" placeholder="*E-Mail, Telefon" required="required"/>
-                  </div>
+
+              
+              <div class="input-group mb-3">
+                <div class="invalid-feedback">
+                  Bitte geben Sie eine gültige E-Mail-Adresse ein.
                 </div>
-                <div class="row pb-2 no-gutters">
-                  <div class="col-md-12 col-sm-12">
-                    <textarea class="bg-light mb-2 form-control" id="message" name="message" placeholder="*Deine Nachricht" rows="5" required="required"></textarea>
-                  </div>
+                <div class="valid-feedback">
+                  Vielen Dank für Ihre Anmeldung!
                 </div>
-                <div class="row">
-                  <div class="col text-center text-md-left text-lg-left mt-3">
-                    <button class="btn btn-primary btn-send" type="submit">Senden</button>
-                  </div>
-                </div>
-              </form>
-            </div> -->
-            <!-- <form action="https://formspree.io/youremail@example.com" method="POST"> -->
-            <!-- <div class="col-md-6 col-sm-12 float-right text-right">
-              <h3 class="h5">Address</h3><span>Start Simple<br/>United States</span>
-              <p></p>
-              <h3 class="h5">Phone</h3>
-              <p>(243) 948 3866</p>
-              <h3 class="h5">Email</h3>
-              <p>contact@example.com</p>
-            </div> -->
-          </div>
-          <!-- <div class="row justify-content-center d-md-none">
-            <div class="col-md-3 text-center pt-3">
-              <a href="#" style="display: inline-block;">
-                <i class="fa-solid fa-circle-chevron-up fa-3x btn own-btnup pt-4" aria-hidden="true" name="" id="" href="#" role=""></i>
-              </a>
-            </div>         
-          </div> -->
-        </div>
-        <div class="container text-light">
-          <div class="row">
-            <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
-  
-              <div class="col-md-2 text-center pb-2">
-                <a href="#" style="display: inline-block;">
-                  <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
-                </a>
-              </div>         
-  
-            <div class="col-md-5 col-sm-6 text-right "><!-- Design - --> <a href="https://superseite.ch" target="_blank"><!-- Krakatoom-Design --></a>
-            <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary d-none" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
-          </div>
-          </div>
-        </div>
-      </div>
-      
+              </div>
+          </form> -->
+<!-- Teste NEsletter Formspree-->
+ <!-- ✅ Formspree newsletter form -->
+<form id="newsletterForm" action="https://formspree.io/f/xanjvalk" method="POST" class="needs-validation" novalidate>
+  <div class="input-group mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Ihre E-Mail-Adresse" required>
+    <button class="btn btn-outline-primary" type="submit">Anmelden</button>
+  </div>
+
+  <div class="row justify-content-center mb-2">
+    <div class="col-auto d-flex align-items-start">
+      <input class="form-check-input mt-1" type="checkbox" id="newsletterConsent" name="consent" required>
     </div>
-    
-    <footer class="footerOwn bg-dark tf-footer">
-      <div class="container text-light">
-        <div class="row">
-          <div class="col-md-5 col-sm-12"></div>
+    <div class="col-auto">
+      <label class="form-check-label text-light" for="newsletterConsent">
+        <strong>Ich stimme dem Erhalt des Newsletters zu.</strong>
+      </label>
+    </div>
+  </div>
 
-            <div class="col-md-2 text-center pb-2 d-none d-lg-block">
-              <!-- <div class="col-md-5 col-sm-12 text-right tf-design">Design -<a href="https://templateflip.com" target="_blank">Krakatoom-Design</a> -->
-              <div class="col-md-5"><a href="https://superseite.ch" target="_blank">superseite.ch</a>
+  <!-- Optional visual feedback (will be replaced by SweetAlert) -->
+  <div class="input-group mb-3">
+    <div class="invalid-feedback">
+      Bitte geben Sie eine gültige E-Mail-Adresse ein.
+    </div>
+  </div>
+</form>
 
-              <!-- <a href="#" style="display: inline-block;">
-                <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
-              </a> -->
-            </div>         
 
-          <div class="col-md-5 col-sm-12 text-right tf-design"><a href="https://templateflip.com" target="_blank"></a>
-          <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary" style="font-size:8px;"></a>
-        </div>
+
+
+
+          <small class="text-light">(Keine Sorge, kein Spam. Sie können sich jederzeit abmelden. <i class="fa fa-smile-wink" aria-hidden="true"></i> )</small>
         </div>
       </div>
-    </footer>
+      <!-- ✅ Newsletter Signup Form Ends -->
+
+    </div>
+  </div>
+</div>
+
+<div class="container text-light">
+      <div class="row">
+        <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
+          <div class="col-md-2 text-center pb-2">
+            <div class="row justify-content-center align-items-center text-center" style="min-height: 100px;">
+              <a href="https://superseite.ch"
+                target="_blank"
+                class="text-light"
+                style="position: relative; top: 0rem;"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-anchor-placement="bottom-bottom">
+                <strong>superseite.ch</strong>
+              </a>  
+            </div>
+            <div class="row justify-content-center align-items-center text-center" style="min-height: 40px;">
+                <a href="#" style="display: inline-block;">
+                <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
+              </a>
+            </div>
+          </div>         
+        <div class="col-md-5 col-sm-6 text-right "><!-- Design - --> <a  href="https://superseite.ch" target="_blank"><!-- Krakatoom-Design --></a>
+        <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary d-none" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+<!-- <div class="col-md-5 col-sm-12 text-right tf-design">Design -<a href="https://templateflip.com" target="_blank">Krakatoom-Design</a> -->
+  <!-- <a href="#" style="display: inline-block;">
+  <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
+</a> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>   <!-- Your custom JavaScript -->
@@ -521,6 +552,87 @@
     window.location.href = 'mailto:alex.descamps@outlook.com?subject=Preisliste%20per%20E-Mail%20anfordern';
   });
 
+/* NEWSLETTER SUBFORM START */
+/*
+document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  if (!form.checkValidity()) {
+    form.classList.add('was-validated');
+    return;
+  }
+
+  const formData = new FormData(form);
+
+  fetch("newsletter.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(result => {
+    Swal.fire({
+      icon: 'success',
+      title: 'Danke!',
+      text: result
+    });
+    form.reset();
+    form.classList.remove('was-validated');
+  })
+  .catch(error => {
+    Swal.fire({
+      icon: 'error',
+      title: 'Fehler',
+      text: 'Es gab ein Problem beim Absenden. Bitte versuchen Sie es später erneut.'
+    });
+  });
+});
+*/
+  
+
+  // Newsletter Form Submission with SweetAlert and Fromspree
+  
+  document.getElementById('newsletterForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        Swal.fire({
+          title: 'Danke!',
+          text: 'Ihre Anmeldung war erfolgreich.',
+          icon: 'success',
+          confirmButtonText: 'Schließen'
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          title: 'Fehler!',
+          text: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
+          icon: 'error',
+          confirmButtonText: 'OK'
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        title: 'Fehler!',
+        text: 'Netzwerkproblem oder ungültige Anfrage.',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+    }
+  });
+
 
 </script>
     <script src="scripts/jquery.slim.min.js"></script>
@@ -528,8 +640,11 @@
     <script src="scripts/parallax.min.js"></script>
     <script src="scripts/main.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
   </body>
 </html>

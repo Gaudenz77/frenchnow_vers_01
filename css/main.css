@@ -14,7 +14,7 @@
   position: absolute;
   top:0;
   width: 100%;
-  /* height: 650px; */
+  /* height: 800px; */
   height: 700px;
   content: ' '; }
 .tf-header h1 {
@@ -277,15 +277,15 @@ body {
   }
 
   .tf-header {
-    height:650px;
+    height:800px;
   }
 
   .tf-header::before  {
-    height:650px;
+    height:800px;
   }
 
   .imgLastSection {
-    height:650px;
+    height:800px;
     position: relative;
     background-size: cover;
   
