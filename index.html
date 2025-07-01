@@ -446,7 +446,7 @@
           </form> -->
 <!-- Teste NEsletter Formspree-->
  <!-- ✅ Formspree newsletter form -->
-<form id="newsletterForm" action="https://formspree.io/f/xanjvalk" method="POST" class="needs-validation" novalidate>
+ <form id="newsletterForm" action="https://formspree.io/f/xanjvalk" method="POST" class="needs-validation" novalidate>
   <div class="input-group mb-3">
     <input type="email" name="email" class="form-control" placeholder="Ihre E-Mail-Adresse" required>
     <button class="btn btn-outline-primary" type="submit">Anmelden</button>
@@ -454,7 +454,7 @@
 
   <div class="row justify-content-center mb-2">
     <div class="col-auto d-flex align-items-start">
-      <input class="form-check-input mt-1" type="checkbox" id="newsletterConsent" name="consent" required>
+      <input class="form-check-input mt-1" type="checkbox" id="newsletterConsent" name="consent">
     </div>
     <div class="col-auto">
       <label class="form-check-label text-light" for="newsletterConsent">
@@ -463,13 +463,14 @@
     </div>
   </div>
 
-  <!-- Optional visual feedback (will be replaced by SweetAlert) -->
+  <!-- Optional visual feedback -->
   <div class="input-group mb-3">
     <div class="invalid-feedback">
       Bitte geben Sie eine gültige E-Mail-Adresse ein.
     </div>
   </div>
 </form>
+
 
 
 
@@ -487,8 +488,8 @@
 <div class="container text-light">
       <div class="row">
         <div class="col-md-5 col-sm-12"><!--  &copy;Your Company Name. All rights reserved. --></div>
-          <div class="col-md-2 text-center pb-2">
-            <div class="row justify-content-center align-items-center text-center" style="min-height: 100px;">
+          <div class="col-md-3 text-center pb-2">
+            <div class="row justify-content-center align-items-center text-center" style="min-height: 100px;">Erstellt durch &nbsp;
               <a href="https://superseite.ch"
                 target="_blank"
                 class="text-light"
@@ -497,18 +498,18 @@
                 data-aos-duration="1000"
                 data-aos-delay="200"
                 data-aos-anchor-placement="bottom-bottom">
-                <strong>superseite.ch</strong>
+                <strong>Superseite.ch</strong>
               </a>  
             </div>
-            <div class="row justify-content-center align-items-center text-center" style="min-height: 40px;">
+            <!-- <div class="row justify-content-center align-items-center text-center" style="min-height: 40px;">
                 <a href="#" style="display: inline-block;">
                 <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
               </a>
-            </div>
+            </div> -->
           </div>         
-        <div class="col-md-5 col-sm-6 text-right "><!-- Design - --> <a  href="https://superseite.ch" target="_blank"><!-- Krakatoom-Design --></a>
+        <!-- <div class="col-md-5 col-sm-6 text-right "><a  href="https://superseite.ch" target="_blank"></a>
         <br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary d-none" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
-      </div>
+      </div> -->
     </div>
   </div>  
 </div>
@@ -594,41 +595,57 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
   
   document.getElementById('newsletterForm').addEventListener('submit', async function (e) {
     e.preventDefault();
-
     const form = e.target;
-    const data = new FormData(form);
+    const emailInput = form.querySelector('input[name="email"]');
+    const checkbox = form.querySelector('#newsletterConsent');
 
+    // Check email input first using HTML5 validation
+    if (!emailInput.checkValidity()) {
+      form.classList.add('was-validated');
+      return;
+    }
+
+    // Custom checkbox validation with SweetAlert
+    if (!checkbox.checked) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Zustimmung erforderlich',
+        text: 'Bitte bestätigen kästchen anklicken um mit der Anmeldung fortzufahren.',
+        confirmButtonText: 'OK'
+      });
+      return;
+    }
+
+    // If both valid, send form via Formspree
+    const formData = new FormData(form);
     try {
       const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
       });
 
       if (response.ok) {
         Swal.fire({
-          title: 'Danke!',
-          text: 'Ihre Anmeldung war erfolgreich.',
           icon: 'success',
+          title: 'Vielen Dank!',
+          text: 'Sie haben den Newsletter erfolgreich abonniert.',
           confirmButtonText: 'Schließen'
         });
         form.reset();
+        form.classList.remove('was-validated');
       } else {
         Swal.fire({
-          title: 'Fehler!',
-          text: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
           icon: 'error',
-          confirmButtonText: 'OK'
+          title: 'Fehler',
+          text: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.'
         });
       }
     } catch (error) {
       Swal.fire({
-        title: 'Fehler!',
-        text: 'Netzwerkproblem oder ungültige Anfrage.',
         icon: 'error',
-        confirmButtonText: 'OK'
+        title: 'Verbindungsfehler',
+        text: 'Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.'
       });
     }
   });
