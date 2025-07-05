@@ -225,6 +225,7 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
+  
 }
 
 /* MEDIAQUERIES
@@ -572,4 +573,17 @@ blockquoteRight cite {
 blockquoteRight cite:before {
   content: "\2014 \2009";
 }
+
+/* New Version mark 2 ===================================================================================================== */
+/* CSS */
+.btn-responsivefn {
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .btn-responsivefn  {
+    width: 60% !important;
+  }
+}
+
 /* OWN CSS END ===================================================================================================== */
