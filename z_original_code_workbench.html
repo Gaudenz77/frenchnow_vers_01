@@ -107,18 +107,18 @@
           </div>
 
           <!-- <div class="order-md-3" id="language-switch" onclick="toggleLanguage()">
-            <img id="flagDe" class="img-fluid mx-2" src="./images/germany.png" alt="German Flag">DE&nbsp;&nbsp;
+            <img id="flagDe" class="img-fluid mx-2" src="./images/switzerland.png" alt="German Flag">DE&nbsp;&nbsp;
             <img id="flagFrDe" class="img-fluid" src="./images/france.png" alt="France Flag">&nbsp;&nbsp;fr
           </div> -->
 
           <div class="order-md-3" id="language-switch">
             <div class="dropdown">
               <button class="btn text-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span id="selectedLanguage"><img class="flag-icon pb-1" src="./images/germany.png" alt="German Flag">&nbsp De</span>
+                <span id="selectedLanguage"><img class="flag-icon pb-1" src="./images/switzerland.png" alt="German Flag">&nbsp De</span>
               </button>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
                 <a class="dropdown-item d-none" href="index.html" onclick="setActiveLanguage('germany')">
-                  <img src="./images/germany.png" alt="German Flag" class="flag-icon pb-1">
+                  <img src="./images/switzerland.png" alt="German Flag" class="flag-icon pb-1">
                 </a>
                 <a class="dropdown-item" href="index_french.html" onclick="setActiveLanguage('france')">
                   <img class="flag-icon" src="./images/france.png" alt="French Flag"> &nbsp Fr
@@ -523,7 +523,7 @@
   /* LANGUAGE TOGGLE */
 /*   function toggleLanguage() {
     var flag = document.getElementById('flagDe');
-    var currentLanguage = flag.src.includes('germany.png') ? 'germany' : 'france';
+    var currentLanguage = flag.src.includes('switzerland.png') ? 'germany' : 'france';
     var newLanguage = currentLanguage === 'germany' ? 'france' : 'germany';
 
     flag.src = './images/' + newLanguage + '.png';
@@ -556,7 +556,8 @@
     <script src="scripts/jquery.slim.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
-    <script src="scripts/main.js"></script>  
+    <!-- <script src="scripts/main.js"></script> -->  
+     <script src="scripts/main.js?v=1.0.4"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

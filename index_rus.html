@@ -96,7 +96,7 @@
 
           <!-- <div class="order-md-3" id="language-switch" onclick="toggleLanguage()">
             <img id="flagFr" class="img-fluid mx-2" src="./images/france.png" alt="France Flag">FR&nbsp;&nbsp;
-            <img id="flagDeFr" class="img-fluid" src="./images/germany.png" alt="German Flag">&nbsp;&nbsp;de
+            <img id="flagDeFr" class="img-fluid" src="./images/switzerland.png" alt="German Flag">&nbsp;&nbsp;de
           </div> -->
 
           <div class="order-md-3" id="language-switch">
@@ -106,7 +106,7 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
                 <a class="dropdown-item" href="index.html" onclick="setActiveLanguage('germany')">
-                  <img class="flag-icon" src="./images/germany.png" alt="German Flag"> &nbsp  De
+                  <img class="flag-icon" src="./images/switzerland.png" alt="German Flag"> &nbsp  De
                 </a>
                 <a class="dropdown-item" href="index_french.html" onclick="setActiveLanguage('france')">
                   <img class="flag-icon" src="./images/france.png" alt="French Flag"> &nbsp  Fr
@@ -114,7 +114,7 @@
                 <a class="dropdown-item d-none" href="index_rus.html" onclick="setActiveLanguage('russia')">
                   <img class="flag-icon pb-1" src="./images/russia.png" alt="Russian Flag"> Russian
                 </a>
-                <a class="dropdown-item" href="index_engl.html" onclick="setActiveLanguage('english')">
+                <a class="dropdown-item" href="index_en.html" onclick="setActiveLanguage('english')">
                   <img class="flag-icon" src="./images/united-kingdom.png" alt="English Flag"> &nbsp En
                 </a>
               </div>
@@ -445,7 +445,7 @@
   /* LANGUAGE TOGGLE */
 /*   function toggleLanguage() {
     var flag = document.getElementById('flagFr');
-    var currentLanguage = flag.src.includes('germany.png') ? 'germany' : 'france';
+    var currentLanguage = flag.src.includes('switzerland.png') ? 'germany' : 'france';
     var newLanguage = currentLanguage === 'germany' ? 'france' : 'germany';
 
     flag.src = './images/' + newLanguage + '.png';
@@ -467,6 +467,7 @@
     <script src="scripts/jquery.slim.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
-    <script src="scripts/main.js" defer></script>
+    <!-- <script src="scripts/main.js" defer></script> -->
+     <script src="scripts/main.js?v=1.0.4"></script>
   </body>
 </html>

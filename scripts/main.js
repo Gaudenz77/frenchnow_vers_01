@@ -69,34 +69,34 @@ document.querySelector('.booking').addEventListener('click', function () {
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 });
 
-// languageSwitch.js
-document.addEventListener("DOMContentLoaded", function () {
-  function getCurrentPage() {
-    var pathArray = window.location.pathname.split('/');
-    return pathArray[pathArray.length - 1];
+// Function to redirect the user based on their browser language
+function redirectToLanguagePage() {
+  if (redirectionPerformed) return;
+
+  var userLanguage = getUserLanguage();
+  var currentPage = window.location.pathname;
+
+  // Check if already on a language page
+  if (
+    currentPage.endsWith('index_french.html') ||
+    currentPage.endsWith('index_rus.html') ||
+    currentPage.endsWith('index.html') ||
+    currentPage.endsWith('index_en.html') // ✅ renamed correctly here
+  ) {
+    redirectionPerformed = true;
+    return;
   }
 
-  function setSelectedOption() {
-    var currentPage = getCurrentPage();
-    var select = document.getElementById('languageDropdown');
-
-    if (currentPage === 'index_french.html') {
-      select.value = 'index_french.html';
-    } else if (currentPage === 'index_rus.html') {
-      select.value = 'index_rus.html';
-    } else if (currentPage === 'index_engl.html') {
-      select.value = 'index_engl.html';
-    } else {
-      select.value = 'index.html'; // Default to German
-    }
+  // Redirect based on language
+  if (userLanguage.startsWith('fr')) {
+    window.location.href = 'index_french.html';
+  } else if (userLanguage.startsWith('ru')) {
+    window.location.href = 'index_rus.html';
+  } else if (userLanguage.startsWith('en')) {
+    window.location.href = 'index_en.html'; // ✅ updated here
+  } else {
+    window.location.href = 'index.html'; // default German
   }
 
-  setSelectedOption();
-
-  var select = document.getElementById('languageDropdown');
-  select.addEventListener('change', function () {
-    var selectedOption = select.options[select.selectedIndex];
-    var selectedPage = selectedOption.value;
-    window.location.href = selectedPage;
-  });
-});
+  redirectionPerformed = true;
+}

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frenchnow-En</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/android-chrome-512x512.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="description"
+    content="Website for booking French language courses in private lessons | French language courses booking website private education">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://frenchnow.ch/">
+  <meta property="og:title" content="Website for booking French language courses in private lessons" />
+  <meta property="og:type" content="website" />
+
+  <meta name="google-site-verification" content="OScATikkTQXUAuW0tpiL7GuRgSbJIAiqRhOOmVNSXb4" />
+
+  <script src="https://kit.fontawesome.com/d4cbcb96c8.js" crossorigin="anonymous" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap" />
+  </noscript>
+  <!-- <link rel="stylesheet" disabled href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-09C8XT8JMF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-09C8XT8JMF');
+
+  </script>
+  <style>
+
+    .underline-hover strong {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+
+    .underline-hover:hover strong {
+      border-bottom: 1px solid currentColor;
+    }
+  </style>
+</head>
+
+
+<body id="top">
+
+  <header class="tf-header mt-0 pt-5" data-parallax="scroll" data-image-src="images/BildHeader.jpeg">
+    <!-- BANNER BTN START ------------------------------------------------------------------------ -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid bannercontainer customOne-container">
+          <div class="row justify-content-between">
+            <div class="col-2 d-flex justify-content-start">
+              <div class="">
+              </div>
+            </div>
+            <div class="col-8 booking">
+              <div class="bannerText text-center my-1 mt-md-0 pt-3 pb-3 pt-md-2 pb-lg-2">
+                Book a discovery meeting
+              </div>
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+              <div class="close-container">
+                <i class="fa-solid fa-xmark fa-2x bannerX m-3 pt-2 pt-md-1" type="button" class=""
+                  data-bs-dismiss="alert" aria-label="Close" onclick="closeBanner()"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER BTN STOP    ------------------------------------------------------------------------ -->
+    <!-- NAVBAR START ------------------------------------------------------------------------ -->
+    <nav class="navbar navbar-expand-md pt-5 pt-md-5 pb-0">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="d-md-none">
+          <a href="#" id="menu-icon" class="p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </a>
+        </div>
+
+        <div class="col-4 col-md-2 px-0 order-md-1">
+          <!-- Add order-md-1 to move it to the left on medium and large devices -->
+          <a class="navbar-brand mx-0 mx-md-0" href="/"><img id="logoFontFrenchnow" class="img-fluid mx-1 mx-md-0"
+              src="./images/frenchnow_logo_font_01.svg" alt="Frenchnow_logo"></a>
+        </div>
+
+        <div class="order-md-3" id="language-switch">
+          <div class="dropdown">
+            <button class="btn text-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span id="selectedLanguage"><img class="flag-icon pb-1" src="./images/united-kingdom.png"
+                  alt="German Flag">&nbsp En</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="index.html" onclick="setActiveLanguage('germany')">
+                <img src="./images/switzerland.png" alt="German Flag" class="flag-icon pb-1"> &nbsp De
+              </a>
+              <a class="dropdown-item" href="index_french.html" onclick="setActiveLanguage('france')">
+                <img class="flag-icon" src="./images/france.png" alt="French Flag"> &nbsp Fr
+              </a>
+              <a class="dropdown-item" href="index_rus.html" onclick="setActiveLanguage('russia')">
+                <img class="flag-icon" src="./images/russia.png" alt="Russian Flag"> &nbsp Ru
+              </a>
+              <a class="dropdown-item d-none" href="index_en.html" onclick="setActiveLanguage('english')">
+                <img class="flag-icon" src="./images/united-kingdom.png" alt="English Flag"> English
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end order-md-2" id="navbarNav">
+          <!-- Add order-md-3 to move it to the right on medium and large devices -->
+          <ul class="nav navbar-nav mx-3">
+            <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4"
+                href="#">Home</a></li>
+            <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4"
+                href="#work">Offer</a></li>
+            <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4"
+                href="#work2">About me</a></li>
+            <li class="nav-item row justify-content-start"><a class="nav-link text-center px-0 px-md-4"
+                href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- NAVBAR STOP ------------------------------------------------------------------------ -->
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-7 col-sm-12">
+          <h2 class="mt-2"> Learn French.<br></h2>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <p class="mt-4">
+            Professional, personal, quick to success. With Frenchnow.
+            I tailor your specific needs using the latest tools and with dedication!
+          </p>
+          <p class="mt-4">
+            <strong class="text-uppercase">Interested?</strong>
+            <span> - Call me (click the icon),
+              <a href="#contact"> write me,</a> oder
+              <a href="#contact"> or request the price list!</a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row no-gutters">
+        <div class="btn-group col-md-5 pt-2">
+          <button type="button" role="button" id="buttonphone" name="phonenumber" class="btn btn-ownblue"
+            aria-label="call"><a href="tel:+41765044299" class="text-light"><i
+                class="fa-solid fa-phone-volume phoneBtn fa-2x" style="font-size: 1.5rem;"></a></i></button>
+          <input type="email" id="email" name="email" autocomplete="email"
+            class="formTop form-control text-center col-3" value="" placeholder="" aria-label="Disabled input example"
+            disabled readonly><!-- Call directly / Enter email -->
+          <button type="button" role="button" class="btn btn-ownred" id="mailbutton2" aria-label="e-mail"><i
+              class="fa-solid fa-envelope fa-2x" style="font-size: 1.5rem;"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-content">
+
+    <div class="tf-work-section">
+      <div class="container" id="work">
+        <h2 class="h3">Offer</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 col-sm-12 pt-2 mx-2 mx-md-0">
+            <div class="card">
+              <img class="img-fluid card-img-top" src="images/BildBusiness.jpeg" alt="courses-professional-1" />
+              <div class="card-body">
+                <h3>Business Language Training</h3>
+                <p class="textCourses">
+                  We support your individual language training professionally with the latest methods at the location of
+                  your choice. Lively learning, varied and with a high return on investment makes your learning
+                  experience a success. To ensure that you can appear competent in your professional environment both
+                  orally and in writing, all four language skills (reading comprehension, listening comprehension,
+                  written and oral expression) are optimally trained. On request also with your own documents and
+                  industry-specific vocabulary.
+                </p>
+                <a class="cardlinkOwn" href="#contact" style="text-decoration: underline;"><strong>Get the price list
+                    now</strong></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 pt-2 pt-2 mx-2 mx-md-0">
+            <div class="card">
+              <img class="img-fluid card-img-top" src="images/BildMitte.jpeg" alt="courses-general-2" />
+              <div class="card-body">
+                <h3>French for Everyday Life</h3>
+                <p class="textCourses">Whether for family or personal interests, we elevate individual or group lessons
+                  to a new level. You quickly gain confidence in speaking and can communicate effortlessly. The latest
+                  visual, written, and oral teaching methods ensure your effortless learning progress. Speak with
+                  Frenchnow if you want to learn French with joy. Whether in your neighborhood, at your place, or in
+                  Zurich's Seefeld district, Frenchnow conversation training is just right for you.
+                </p>
+                <a class="cardlinkOwn" href="#contact" style="text-decoration: underline;"><strong>Get the price list
+                    now</strong></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4 col-sm-12 pt-2 pt-2 mx-2 mx-md-0">
+            <div class="card">
+              <img class="img-fluid card-img-top" src="images/Bild Nachhilfe.jpeg" alt="courses-general-2" />
+              <div class="card-body">
+                <h3>Tutoring & Exam Preparation</h3>
+                <p class="textCourses">
+                  French doesn’t have to be hard. It can even be fun when grades improve and you experience success.
+                  Frenchnow offers qualified French tutoring from the age of twelve. The offer includes catching up on
+                  missed school material as well as effective exam preparation for high school, BMS, secondary school,
+                  and DELF-DALF. Lessons take place at the location of your choice or in Zurich Seefeld. Tip: Be sure to
+                  book early, especially for exam preparation!
+                </p>
+                <a class="cardlinkOwn" href="#contact" style="text-decoration: underline;"><strong>Get the price list
+                    now</strong></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!--CAROUSEL START -->
+      <div class="tf-quotes-section">
+        <div class="carousel slide mt-5" id="tf-carousel" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#tf-carousel" data-slide-to="0"></li>
+            <li data-target="#tf-carousel" data-slide-to="1"></li>
+            <li data-target="#tf-carousel" data-slide-to="2"></li>
+            <li data-target="#tf-carousel" data-slide-to="3"></li>
+            <li data-target="#tf-carousel" data-slide-to="4"></li>
+            <li data-target="#tf-carousel" data-slide-to="5"></li>
+            <li data-target="#tf-carousel" data-slide-to="6"></li>
+            <li data-target="#tf-carousel" data-slide-to="7"></li>
+            <li data-target="#tf-carousel" data-slide-to="8"></li>
+            <li data-target="#tf-carousel" data-slide-to="9"></li>
+
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active"
+              style="background-image: url('images//img_sliders/fn_slider_bizwoman01.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"From experience, I can say that Alexandra is a great person to
+                  learn French with. She perfectly adapts her lessons to my abilities and goals, always finds
+                  interesting topics, and – most importantly – makes mastering the French language easy."</p>
+                <p class="slider-text-2"><small>Simone Thommen, Coaching / Communication etc.</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_kids.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Alexandra is an excellent French teacher for our daughter
+                  preparing for the entrance exam. In recent months she has proven her ability to assess students well
+                  and adapt lessons accordingly. Her dynamic tutoring keeps our daughter focused, and relevant homework
+                  reinforces learning."</p>
+                <p class="slider-text-2"><small>Adina Covei, Director at UBS Business Solutions</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_school03.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Lessons with Alexandra are a lot of fun. Her tailor-made
+                  approach covers my need for variety perfectly. She skillfully balances grammar and conversation, and
+                  time flies during lessons."</p>
+                <p class="slider-text-2"><small>Ralph Schmid, Photo & video enthusiast, digital marketeer at Canon
+                    Switzerland</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_school04.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Alexandra is a very motivated teacher who delivers results
+                  quickly. Her approach is tailored both in content and methodology to each student. It's also a lot of
+                  fun to work with her."</p>
+                <p class="slider-text-2"><small>Stephan Z., Senior Managing Director at UBP</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_bizwoman02.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Alexandra, our French teacher, is not only professional but also
+                  highly engaging. In our B1-level office courses, my colleague and I made impressive progress thanks to
+                  her flexible teaching. Her motivating lessons and practical homework significantly increased my
+                  interest in learning."</p>
+                <p class="slider-text-2"><small>Marianna Vladimirova, Senior Corp. Underwriter at NewRe, FRM</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_travel04.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"My intensive French course with Alexandra was worth it. I now
+                  know my strengths and weaknesses. She challenges you constantly, doesn't let go of grammar and
+                  homework – but it’s effective. In conversations, she responds to customer interests, and the lesson
+                  flies by! Gladly again!"</p>
+                <p class="slider-text-2"><small>Alina Schröter, Branding & Communication Expert</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_travel06.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Alexandra is a very professional French teacher who combines
+                  discipline and fun in language instruction. She is flexible and committed to achieving goals with
+                  students. She immediately understands needs and adapts lessons accordingly. It’s great working with
+                  her!</p>
+                <p class="slider-text-2"><small>Floriana Scarlato, Group Head Compliance at Lombard Odier</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_travel07.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"Her varied lessons are always challenging and motivating. With
+                  her flexibility, she adapts content and focus individually to learners' needs and uses time
+                  effectively. She also proactively offers additional ideas for language development based on personal
+                  interests, from recipes to films."</p>
+                <p class="slider-text-2"><small>Matteo Cussigh, Head of Europe at Peak Re</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_travel09.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"The French lessons are well-organized. A lot of value is placed
+                  on identifying needs and regularly applying what has been learned. This allows for profound and
+                  detailed training. The lessons are cheerful and playful, significantly improving the learning curve. I
+                  can highly recommend Alexandra Descamps to anyone who wants to learn French at a high level."</p>
+                <p class="slider-text-2"><small>Karsten Hell, Real Estate / Consulting / Analysis / Management /
+                    DACH</small></p>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/img_sliders/fn_slider_travel10.png');">
+              <div class="carousel-caption">
+                <p class=" slider-text-1 mb-1 my-md-3">"I recommend taking French lessons with Alexandra. She interacts
+                  individually, motivating, and interactively with her students."</p>
+                <p class="slider-text-2"><small>Zhanna Kairbekova, Assistant</small></p>
+              </div>
+            </div>
+            <!--CAROUSEL STOP -->
+          </div><a class="carousel-control-prev" href="#tf-carousel" role="button" data-slide="prev"><span
+              class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a
+            class="carousel-control-next" href="#tf-carousel" role="button" data-slide="next"><span
+              class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+      </div>
+      <!-- Double Succes Section, Her Story-->
+      <div class="tf-work-section">
+        <div class="container" id="work2">
+          <h3 class="my-4"><strong><em>Hello, I’m Alexandra Descamps…</em></strong></h3>
+        </div>
+        <div class="container">
+          <div class="row justify-content-evenly">
+            <div class="col-md-6 col-sm-12 pt-2">
+              <div class="card align-items-center">
+                <img class="img-fluid rounded-circle card-img-top" src="images/alex_decamps.webp"
+                  alt="alex_decamps_portrait" style="width:320px; height:auto" />
+                <div class="card-body">
+                  <p class="textCourses">
+                    <blockquoteOwn>
+                      As a native French speaker with an extroverted and charismatic personality, I am committed to
+                      optimally motivating my learners to achieve their goals. In a relaxed and positive atmosphere, my
+                      motto is: learn seriously with joy and good humor! With a master’s degree in business and
+                      experience in various roles (finance, sales, administration) across several countries, I bring
+                      extensive professional and life experience. Today, as a mother of three teenagers, I specialize in
+                      language teaching and hold the Eurolta and SVEB1 diplomas.
+                      My lessons take place at your home or in Seefeld, Zurich. Upon request, a room in Central Zurich
+                      can be rented.</blockquoteOwn>
+                  </p>
+                  <!-- <a class="cardlinkOwn" href="#"><strong>Mehr...</strong></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <!-- <div class="col-md-6 col-sm-12 pt-2"> -->
+              <div class="card align-items-center">
+                <div class="row justify-content-center">
+                  <img class="img-fluid card-img-top text-center" src="./images/france_Swiss_amitie_01.webp"
+                    alt="swiss-french-heart-friendship-symbol" style="width:350px; height:auto" />
+                </div>
+                <div class="card-body pt-4">
+                  <p class="textCourses">
+                    <blockquoteRight>I offer tailor-made programs adapted to your needs, whether for phone calls,
+                      emails, negotiations, conversation, or travel preparation. My learning method, suitable for
+                      beginners to advanced learners, supports continuous progress in general or business French.
+                      Companies, institutions, and individuals (adults, teenagers) benefit from my flexible teaching
+                      style tailored to different personalities.
+                      My strengths include targeted learning, quick and optimal goal achievement, and empathetic
+                      attention to individual needs.</blockquoteRight>
+                  </p>
+                  <a class="cardlinkOwn" href="https://www.linkedin.com/in/alexandradescamps/" target="_blank"><i
+                      class="fa-brands fa-linkedin fa-2x"></i>&nbspAlexandra Descamps auf LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tf-contact-section tf-header imgLastSection">
+        <div class="container" id="contact">
+          <h2 class="h4 text-lastSection">Your language journey starts here!</h2>
+        </div>
+        <div class="container">
+
+          <div class="container my-5">
+            <div class="row justify-content-center text-center g-3" data-aos="fade-up" data-aos-duration="1000">
+              <div class="col-12 col-md-5 mb-4">
+                <button type="button" id="btnMeeting" class="btn btn-outline-primary btn-responsivefn py-3 mx-auto"
+                  aria-label="Kostenloses Kennenlerngespräch vereinbaren">
+                  <b>Schedule a free introductory meeting</b>
+                </button>
+              </div>
+              <div class="col-12 col-md-5">
+                <button type="button" id="btnPrices" class="btn btn-outline-primary btn-responsivefn py-3 mx-auto"
+                  aria-label="Preisliste per E-Mail anfordern">
+                  <b>Request the price list by email</b>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ✅ Newsletter Signup Form Starts -->
+        <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-12 col-md-6 text-center">
+            <h3 class="mb-3 text-light">Subscribe to the newsletter</h3>
+            <p class="mb-4 text-light"><strong>Occasionally receive news & offers from Frenchnow.</strong></p>
+            <!-- TEST PHP SONNTAG ENGLISH START -->
+            <form id="newsletterForm" action="newsletter.php" method="POST" class="needs-validation px-4 md-px-0"
+              novalidate>
+              <div class="row justify-content-center">
+                <div class="input-group col-10 col-md-9 mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Your email address" required>
+                  <button class="btn btn-outline-primary" type="submit">Subscribe</button>
+                </div>
+              </div>
+
+              <!-- Consent Checkbox -->
+              <div class="row justify-content-center mb-2">
+                <div class="col-auto d-flex align-items-start">
+                  <input class="form-check-input mt-1" type="checkbox" id="newsletterConsent" name="consent" required>
+                </div>
+                <div class="col-auto">
+                  <label class="form-check-label text-secondary" for="newsletterConsent">
+                    I agree to receive the newsletter.
+                  </label>
+                </div>
+              </div>
+
+              <!-- Email error message -->
+              <div class="input-group mb-3">
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+            </form>
+            <!-- TEST PHP SUNDAY GERMAN STOP -->
+
+            <small class="text-light px-4 md-px-0">(No worries, no spam. You can unsubscribe at any time. 😉)</small>
+
+            ...
+
+<div class="row justify-content-center text-center mt-2 mb-0">
+  <div class="text-light" style="position: relative;">
+    <b>Created by </b>
+    <a href="https://superseite.ch" target="_blank" class="text-light underline-hover aos-init aos-animate" style="text-decoration: none;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="bottom-bottom">
+      <strong>Superseite.ch</strong>
+    </a>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+
+        <!-- <div class="row justify-content-center align-items-center text-center" style="min-height: 40px;">
+    <a href="#" style="display: inline-block;">
+    <i class="fa-solid fa-circle-chevron-up fa-3x own-btnup pt-2" aria-hidden="true" name="" id="" href="#" role=""></i>
+  </a>
+</div> -->
+        <!-- <div class="col-md-5 col-sm-6 text-right "><a  href="https://superseite.ch" target="_blank"></a>
+<br><a href="https://www.flaticon.com/free-icons/germany" title="germany icons" class="text-secondary d-none" style="font-size:8px;">Germany icons created by Freepik - Flaticon</a>
+</div> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+          crossorigin="anonymous"></script> <!-- Your custom JavaScript -->
+        <script>
+
+          /* MAILTO FUNCTION START */
+
+          document.getElementById('mailbutton2').addEventListener('click', function () {
+            // Change 'your.email@example.com' to the email address you want to open in the mail client
+            window.location.href = 'mailto:alex.descamps@outlook.com';
+          });
+          // Mail Buttons Kennelernen, Preisliste
+          document.getElementById('btnMeeting').addEventListener('click', function () {
+            window.location.href = 'mailto:alex.descamps@outlook.com?subject=Kostenloses%20Kennenlerngespräch%20vereinbaren';
+          });
+
+          document.getElementById('btnPrices').addEventListener('click', function () {
+            window.location.href = 'mailto:alex.descamps@outlook.com?subject=Preisliste%20per%20E-Mail%20anfordern';
+          });
+
+          // Newsletter Form Submission with SweetAlert and Fromspree
+
+          document.getElementById('newsletterForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const emailInput = form.querySelector('input[name="email"]');
+            const checkbox = form.querySelector('#newsletterConsent');
+
+            // Check email input first using HTML5 validation
+            if (!emailInput.checkValidity()) {
+              form.classList.add('was-validated');
+              return;
+            }
+
+            // Custom checkbox validation with SweetAlert
+            if (!checkbox.checked) {
+              Swal.fire({
+                icon: 'warning',
+                title: 'Zustimmung erforderlich',
+                text: 'Bitte bestätigen kästchen anklicken um mit der Anmeldung fortzufahren.',
+                confirmButtonText: 'OK'
+              });
+              return;
+            }
+
+            // If both valid, send form via Formspree
+            const formData = new FormData(form);
+            try {
+              const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+              });
+
+              if (response.ok) {
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Vielen Dank!',
+                  text: 'Sie haben den Newsletter erfolgreich abonniert.',
+                  confirmButtonText: 'Schließen'
+                });
+                form.reset();
+                form.classList.remove('was-validated');
+              } else {
+                Swal.fire({
+                  icon: 'error',
+                  title: 'Fehler',
+                  text: 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.'
+                });
+              }
+            } catch (error) {
+              Swal.fire({
+                icon: 'error',
+                title: 'Verbindungsfehler',
+                text: 'Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.'
+              });
+            }
+          });
+
+
+        </script>
+        <script src="scripts/jquery.slim.min.js"></script>
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script src="scripts/parallax.min.js"></script>
+        <!-- <script src="scripts/main.js"></script> -->
+        <script src="scripts/main.js?v=1.0.4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
+</body>
+
+</html>
