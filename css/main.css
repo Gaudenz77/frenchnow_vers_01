@@ -121,7 +121,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 340px; 
+  height: 400px; 
 }
 
 .tf-quotes-section .carousel-item::before {
@@ -171,7 +171,7 @@
 /* Contact Section */
 .tf-contact-section {
   background: url('../images/learn_french_in_paris_symbolic_01.webp') no-repeat center center;
-  height:120%;
+  background-size: cover;
 }
 
 .tf-contact-section h2.h4 {
