@@ -8,23 +8,28 @@
 
 
 <url>
-  <loc>https://www.frenchnow.ch/</loc>
-  <lastmod>2024-02-15T13:55:46+00:00</lastmod>
+  <loc>https://frenchnow.ch/</loc>
+  <lastmod>2025-07-06T19:16:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.frenchnow.ch/index.html</loc>
-  <lastmod>2024-02-15T13:55:46+00:00</lastmod>
+  <loc>https://frenchnow.ch/index.html</loc>
+  <lastmod>2025-07-06T19:16:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.frenchnow.ch/index_french.html</loc>
-  <lastmod>2024-02-15T13:55:46+00:00</lastmod>
+  <loc>https://frenchnow.ch/index_french.html</loc>
+  <lastmod>2025-07-06T19:16:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.frenchnow.ch/index_rus.html</loc>
-  <lastmod>2024-02-15T13:55:47+00:00</lastmod>
+  <loc>https://frenchnow.ch/index_rus.html</loc>
+  <lastmod>2025-07-06T19:16:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frenchnow.ch/index_en.html</loc>
+  <lastmod>2025-07-06T19:16:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
