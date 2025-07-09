@@ -184,8 +184,8 @@
 }
 
 .tf-contact-section button {
-  padding-right: 40px;
-  padding-left: 40px; 
+  /*padding-right: 40px;
+  padding-left: 40px; */
 }
 
 .tf-contact-section h3.h5 {
@@ -583,7 +583,7 @@ blockquoteRight cite:before {
 
 @media (max-width: 767.98px) {
   .btn-responsivefn  {
-    width: 60% !important;
+    width: 70% !important;
   }
 }
 
